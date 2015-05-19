@@ -35,15 +35,10 @@ for link in soup.findAll('a',{'class':'nav_a'}):
 	href = link.get('href')
 	print  link.get('href')
 
-	try:
-		print "prin nwew"
-		
+	try:		
 		next_page = requests.get(href)
-		fopen.write(str(BeautifulSoup(next_page.text)))
-		print "Sdfsdfjksdjvndksnk sdjvsdvjs jsd djh"
-		# get_class_feature(next_page,'localImage',fopen)          
-		# print "sdnfnooino"        #getting featues name
-		# get_span(next_page,'refinementLink',fopen)    
+		fopen.write(str(BeautifulSoup(next_page.text))
+   
 	except :
 		print "some problem"
 		
