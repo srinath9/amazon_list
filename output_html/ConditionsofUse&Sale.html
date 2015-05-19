@@ -1,0 +1,1534 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="http://z-ecx.images-amazon.com/images/G/01/AUIClients/AmazonUI-02d30abc4c24a66688702e49e07321443578467a.rendering_engine-not-trident.min._V2_.css" rel="stylesheet"/>
+<script>
+(function(n,a,k,l){function j(a,b){E&&E.count&&E.count("aui:"+a,b===0?0:b||(E.count("aui:"+a)||0)+1)}function i(a,b,c){a.addEventListener?a.addEventListener(b,c,!1):a.attachEvent&&a.attachEvent("on"+b,c)}function h(a,b,c,d){b=b&&c?b+a+c:b||c;return d?h(a,b,d):b}function g(a,b){try{Object.defineProperty(n,a,{value:b})}catch(c){n[a]=b}}function f(){return setTimeout(C,0)}function e(a,b){var c=a.length,d=c,e=function(){d--||(D.push(b),v||(f(),v=!0))};for(e();c--;)z[a[c]]?e():(m[a[c]]=m[a[c]]||[]).push(e)}
+function d(b,c,d,e){var f=a.createElement(b?"script":"link");i(f,"error",e);b?(f.type="text/javascript",f.async=!0,d&&(c.indexOf("images/I")!==-1||/AUIClients/.test(c))&&f.setAttribute("crossorigin","anonymous"),f.src=c):(f.rel="stylesheet",f.href=c);a.getElementsByTagName("head")[0].appendChild(f)}function c(a,b){return function(c){function e(){d(b,c,f,function(){f?(f=!1,j("resource_retry"),e()):(j("resource_error"),a.log("Asset failed to load: "+c))})}if(F[c])return!1;F[c]=!0;j("resource_count");
+var f=!0;return!e()}}function b(a,b,c,d,f){return function(g,h){var i=f||this;typeof g==="function"&&(h=g,g="anon"+I++);var j=i.guardError(g,function(){for(var c=[],e=0;e<a.length;e++)c[e]=M.hasOwnProperty(a[e])?M[a[e]]:l;e=null;d?e=h:typeof h==="function"&&(e=h.apply(n,c));if(b){M[g]=e;c=g;for(z[c]=!0;(m[c]||[]).length;)m[c].shift()();delete m[c]}});M.hasOwnProperty(g)&&i.error("Component already registered",g);M[g]=l;c?j():e(a,j)}}function o(a){return function(){return{execute:b(arguments,!1,a,
+!1,this),register:b(arguments,!0,a,!1,this)}}}function p(a,b){return function(c,d){var e=this;return function(){d||(d=c,c=l);try{d.apply(this,arguments)}catch(f){var g=n.console;if(g&&g.error&&e.log(f,b,c))g.error(h(String.fromCharCode(10),h(": ",a,c,f.message),f.stack||f));else throw f instanceof Error?f:Error(h(": ",a,c,f));}}}}function r(a){this.log=function(b,c,d){var e=n.ueLogError;return e?(e({message:b,logLevel:c||"ERROR",attribution:h(":",a,d)}),!0):!1};this.error=function(b,c,d,e){throw Error(h(" @ ",
+h(":",e,b),h(":",a,c,d)));};this.guardError=p(a);this.guardFatal=p(a,"FATAL");this.load={js:c(this,!0),css:c(this)}}function t(a,b){for(var c=a.className.split(" "),d=c.length;d--;)if(c[d]===b)return;a.className+=" "+b}function q(a,b){for(var c=a.className.split(" "),d=[],e;(e=c.pop())!==l;)e&&e!==b&&d.push(e);a.className=d.join(" ")}function x(a){try{return a()}catch(b){return!1}}function s(){if(qa){var a=n.innerWidth?{w:n.innerWidth,h:n.innerHeight}:{w:G.clientWidth,h:G.clientHeight},b=!1;Math.abs(a.w-
+ta.w)>5||a.h-ta.h>50?(ta=a,ua=4,(b=Q.mobile||Q.tablet?a.w>a.h:a.w>=1250)?t(G,"a-ws"):q(G,"a-ws")):ua--&&(va=setTimeout(s,16))}}function u(){clearTimeout(va);ua=4;s()}function w(a){(qa=a===l?!qa:!!a)&&s()}function y(){return qa}var A=n.AmazonUIPageJS||n.P;if(A&&A.when&&A.register)throw Error("A copy of P has already been loaded on this page.");var E=n.ue;E&&E.tag&&(E.tag("aui"),E.tag("aui:aui_build_date:3.15.5.4-2015-05-14"));var B=k.now=k.now||function(){return+new k},D=[],v=!1,C;C=function(){for(var a=
+f(),b=B();D.length;)if(D.shift()(),B()-b>50)return;clearTimeout(a);v=!1};(function(a){try{return a.test(navigator.userAgent)}catch(b){return!1}})(/OS 6_[0-9]+ like Mac OS X/i)&&i(n,"scroll",f);var z={},m={},F={},I=0,M={},J;r.prototype={declare:b([],!0,!0,!0),register:b([],!0),execute:b([]),AUI_BUILD_DATE:"3.15.5.4-2015-05-14",when:o(),now:o(!0),trigger:function(a,b){var c=n.aPageStart||NaN,d=B(),c={data:b,pageElapsedTime:d-c,triggerTime:d};this.declare(a,c);J&&J(a,c)},handleTriggers:function(a){J&&
+this.error("Trigger handler already registered");J=a},attributeErrors:function(a){return new r(a)}};g("AmazonUIPageJS",new r);g("P",n.AmazonUIPageJS);if(a.addEventListener){var K;a.addEventListener("DOMContentLoaded",K=function(){n.AmazonUIPageJS.trigger("a-domready");a.removeEventListener("DOMContentLoaded",K,!1)},!1)}var G=a.documentElement,H;try{H=navigator.userAgent}catch(T){H=""}var sa=function(){var b="Khtml,O,ms,Moz,Webkit".split(","),c=a.createElement("div");return{testGradients:function(){c.style.cssText=
+("background-image:"+"-webkit- ".split(" ").join("gradient(linear,left top,right bottom,from(#9f9),to(white));background-image:")+b.join("linear-gradient(left top,#9f9, white);background-image:")).slice(0,-17);return c.style.backgroundImage.indexOf("gradient")>-1},test:function(a){for(var d=a.charAt(0).toUpperCase()+a.substr(1),a=(b.join(d+" ")+d+" "+a).split(" "),d=a.length;d--;)if(c.style[a[d]]==="")return!0;return!1},testTransform3d:function(){var a=!1;if(n.matchMedia)a=n.matchMedia("(-webkit-transform-3d)").matches;
+return a}}}(),A=G.className,ya=/(^| )a-mobile( |$)/.test(A),ka=/(^| )a-tablet( |$)/.test(A),Q={audio:function(){return!!a.createElement("audio").canPlayType},video:function(){return!!a.createElement("video").canPlayType},canvas:function(){return!!a.createElement("canvas").getContext},offline:function(){return navigator.hasOwnProperty&&navigator.hasOwnProperty("onLine")&&navigator.onLine},dragDrop:function(){return"draggable"in a.createElement("span")},geolocation:function(){return!!navigator.geolocation},
+history:function(){return!(!n.history||!n.history.pushState)},webworker:function(){return!!n.Worker},autofocus:function(){return"autofocus"in a.createElement("input")},inputPlaceholder:function(){return"placeholder"in a.createElement("input")},textareaPlaceholder:function(){return"placeholder"in a.createElement("textarea")},localStorage:function(){return"localStorage"in n&&n.localStorage!==null},orientation:function(){return"orientation"in n},touch:function(){return"ontouchend"in a},gradients:function(){return sa.testGradients()},
+hires:function(){var a=n.devicePixelRatio&&n.devicePixelRatio>=1.5||n.matchMedia&&n.matchMedia("(min-resolution:144dpi)").matches;j("hiRes"+(ya?"Mobile":ka?"Tablet":"Desktop"),a?1:0);return a},transform3d:function(){return sa.testTransform3d()},touchScrolling:function(){return RegExp("Windowshop|android.([3-9]|[L-Z])|OS ([5-9]|[1-9][0-9]+)(_[0-9]{1,2})+ like Mac OS X|Chrome|Silk|Firefox|Trident"+String.fromCharCode(92)+"/.+?; Touch","i").test(H)},ios:function(){return!!H.match(/OS [1-9][0-9]*(_[0-9]*)+ like Mac OS X/i)},
+android:function(){return!!H.match(/android.([1-9]|[L-Z])/i)&&!/trident/i.test(H)},mobile:function(){return ya},tablet:function(){return ka}},aa;for(aa in Q)Q.hasOwnProperty(aa)&&(Q[aa]=x(Q[aa]));for(var da="textShadow textStroke boxShadow borderRadius borderImage opacity transform transition".split(" "),ca=0;ca<da.length;ca++)Q[da[ca]]=x(function(){return sa.test(da[ca])});var qa=!0,va=0,ta={w:0,h:0},ua=4;s();typeof n.addEventListener==="function"?n.addEventListener("resize",u,!1):n.attachEvent("onresize",
+u);q(G,"a-no-js");t(G,"a-js");A=[];for(aa in Q)Q.hasOwnProperty(aa)&&Q[aa]&&A.push("a-"+aa.replace(/([A-Z])/g,function(a){return"-"+a.toLowerCase()}));t(G,A.join(" "));G.setAttribute("data-aui-build-date",n.AmazonUIPageJS.AUI_BUILD_DATE);n.AmazonUIPageJS.register("p-detect",function(){return{capabilities:Q,toggleResponsiveGrid:w,responsiveGridEnabled:y}})})(window,document,Date);
+//Locally override
+</script>
+<script>
+  (window.AmazonUIPageJS ? AmazonUIPageJS : P).load.js('http://z-ecx.images-amazon.com/images/G/01/AUIClients/AmazonUI-0f592f6f6830da6c2e97e5fe6b1b61d52b5c7e48.rendering_engine-not-trident.min._V2_.js');
+</script>
+<style type="text/css">
+.cs-help-content .cs-help-note p {
+  padding-left:75px !important;
+  background: url("http://g-ecx.images-amazon.com/images/G/31/x-locale/cs/help/images/indexcard_note._V365960732_.png") no-repeat 10px 15px !important;
+}
+.cs-help-content .cs-help-note p.take_action {
+  padding-left:75px !important;
+  background-image: url("http://g-ecx.images-amazon.com/images/G/31/x-locale/cs/help/images/indexcard_takeaction._V365960732_.png") !important;
+}
+.cs-help-content .cs-help-note div.cs-help-callout-button {
+  margin-left:75px !important;
+}
+</style>
+<link href="http://z-ecx.images-amazon.com/images/G/01/browser-scripts/wcs-css-buttons/wcs-css-buttons-2172471701._V1_.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript">
+
+var amznJQ,jQueryPatchIPadOffset=false;
+(function() {
+  function f() {}
+  function ch(y) {return String.fromCharCode(y);}
+  amznJQ={
+    addLogical:f,
+    addStyle:f,
+    addPL:f,
+    available:f,
+    chars:{EOL:ch(10), SQUOTE:ch(39), DQUOTE:ch(34), BACKSLASH:ch(92), YEN:ch(165)},
+    completedStage:f,
+    declareAvailable:f,
+    onCompletion:f,
+    onReady:f,
+    strings:{}
+  };
+}());
+
+
+</script>
+<script type="text/javascript">
+    amznJQ.onReady('wcs-help-helppage-data', function() {
+        if (wcs && wcs.help && wcs.help.HelpPageData) {
+            wcs.help.HelpPageData.allParams = {
+                'PlatformType' : ["Desktop","DesktopBrowser"],
+                'CustomerName' : '',
+                'isRecognized' : '0'
+            };
+        }
+    });
+</script>
+<title>
+Amazon.in Help: Conditions of Use  
+</title>
+<script language="JavaScript" type="text/javascript">
+   <!--
+var csHelpOmnitureAccountName = 'acsin-prod';
+
+if (typeof csHelpOmniture === 'undefined') { csHelpOmniture = {}; }
+
+
+csHelpOmniture.setupHMDWidget = function() {
+
+   if (window.P && window.P.AUI_BUILD_DATE) {
+
+      P.when("A").register("csHelpOmniture", function() {
+
+         return {
+            storeHMDResults: function(wasHelpful, feedbackKind, freeformText) {
+               s.linkTrackVars = 'events,eVar53,eVar54,eVar56';
+               s.linkTrackEvents = 'event30,event31';
+               s.events   = "event31"; // Assume "yes".
+               s.pageName = "200545940";
+
+               if (! wasHelpful) {
+                  s.events = "event30";
+                  s.eVar53 = feedbackKind;
+
+                  // Not for Phase I.  s.eVar56 = freeformText; //TODO:  right var name?
+               }
+
+               s.eVar54 = "0";
+
+               if (s.tl) {
+                  s.tl(/*objectBeingClickedOrTrue=>*/ true,
+                       /*linkType=>Custom Links*/     "o",
+                       /*linkName=>*/                 "Digital HMD Widget");
+               }
+            }
+         }
+      });
+   }
+};
+
+csHelpOmniture.event = function(omnitureObjJson) {
+
+    this.setupHMDWidget();
+
+    s.pageName = '200545940';
+    s.channel = 'Retail';
+    s.eVar46 = s.channel;
+    s.fpCookieDomainPeriods = '2';
+
+
+
+    s.prop14 = 'conditions of use';
+    // The first H1 entry takes precedence over the encoded title value, if present.
+    var firstH1 = '';
+    // Migrate to Help 4.0, need to compatible with Help 3.0, will delete else branch once Help 4.0 fully launched
+    if (jQuery('.cs-help-content h1:first').length) {
+        if (jQuery('.cs-help-content h1:first img').length) {
+            if ( jQuery('.cs-help-content h1:first img').attr("alt") !== undefined ) {
+                firstH1 = jQuery('.cs-help-content h1:first img').attr("alt").replace(/["'`\r\n]/g, '');
+            }
+        } else {
+            firstH1 = jQuery('.cs-help-content h1:first').text().replace(/["'`\r\n]/g, '');
+        }
+    } else {
+        firstH1 = jQuery('.center-col h1:first').text();
+    }
+
+    if ( firstH1 ) { s.prop14 = firstH1; }
+
+    s.prop15 = 'REDESIGN_HELP_GATEWAY_32610:T1|REFUND_VIDEOS_35985:|CARNAC_SHAPSHOT_CLICKSTREAM_DATA_22374:|CARNAC_HELP_MOST_RELEVANT_ORDER_35759:|HELP_CARNAC_REPLACE_QUICK_SOLUTIONS_39214:|CARNAC_HELP_GATEWAY_HTTPS_REDIRECT_37955:|HELP_KM_VIDEO_SS_43037:|HELP_KM_VIDEO_TYO_43090:|HELP_KM_VIDEO_PSLIP_43091:|CS_HELP_ANSWER_BOX_43117:|CS_HELP_ANSWER_BOX_MOBILE_46921:|CS_SEARCH_ANSWER_BOX_REDESIGN_50548:'; // Store any useful weblab settings here, uncomment when we need it
+    // Append Help 3.0 / 4.0 flag
+    if (jQuery('.cs-help-content').length) {
+        s.prop15 += '|HELP_VERSION:4.0';
+    } else {
+        s.prop15 += '|HELP_VERSION:3.0';
+    }
+    s.list1 = s.prop15;
+
+    s.prop37 = '0'; // encrypted customer id
+    s.eVar37 = s.prop37;
+
+    s.prop38 = '000-0000000-0000000'; // session id
+    s.eVar38 = s.prop38;
+
+
+    s.prop41 = 'en_IN';  // TO-DO: find correct variable name.
+    s.eVar41 = s.prop41;
+    s.eVar44 = s.prop14;
+
+
+    var mobileSubTopicNodes;
+    if (jQuery('div.a-touch .cs-help-content .a-box-group a').length) {
+        mobileSubTopicNodes = jQuery('div.a-touch .cs-help-content .a-box-group a');
+        mobileSubTopicNodes.click(
+        function(e) {
+            var s = s_gi('acsin-prod');
+            s.linkTrackVars = 'prop44';
+
+            var link = jQuery(this);
+            var position = mobileSubTopicNodes.index(jQuery(this)) + 1;
+            s.prop44 = link.text() + ":" + position;
+
+            s.tl(this,'o');
+        }
+        );
+    }
+    var mobileTopicH2Nodes;
+    if (jQuery('a.a-expander-header').length) {
+        mobileTopicH2Nodes = jQuery('a.a-expander-header');
+        mobileTopicH2Nodes.click(
+        function(e) {
+            if ( ! mobileTopicH2Nodes.children('i.a-icon-section-collapse').length ) return;
+            var s = s_gi('acsin-prod');
+            s.linkTrackVars = 'prop45,eVar45';
+            s.linkTrackEvents =' event1,event2,event3,event4,event5,event6,event7,event21';
+            s.events = 'event21';
+
+            var link = jQuery(this);
+            s.prop45 = link.text();
+            s.eVar45 = link.text();
+
+            s.tl(this,'o', link.text());
+        }
+        );
+    }
+    var firstThreeSearchResultNodes;
+    if (jQuery('.results-list').length) {
+        firstThreeSearchResultNodes = jQuery('.results-list').children('li:lt(3)').find('a');
+    } else {
+        firstThreeSearchResultNodes = jQuery('.cs-help-search-results').children('div.cs-help-search-result-row:lt(3)').children('h2').find('a');
+    }
+    firstThreeSearchResultNodes.click(
+        function(e) {
+            var s = s_gi('acsin-prod');
+            s.linkTrackVars = 'prop10,eVar10';
+            s.linkTrackEvents = (omnitureObjJson['page'] >= 1) ? 'event1,event2,event3,event4,event5,event6,event7,event22' : 'event1,event2,event3,event4,event5,event6,event7,event20,event22';
+            s.events = (omnitureObjJson['page'] >= 1) ? 'event22' : 'event20,event22';
+
+            var link = jQuery(this);
+
+            s.prop10 = '';
+            s.eVar10 = '';
+
+            s.tl(this,'o', link.text());
+        }
+    );
+
+    var otherSearchResultNodes;
+    if (jQuery('.results-list').length) {
+        otherSearchResultNodes = jQuery('.results-list').children('li:gt(2)').find('a');
+    } else {
+        otherSearchResultNodes = jQuery('.cs-help-search-results').children('div.cs-help-search-result-row:gt(2)').children('h2').find('a');
+    }
+
+    otherSearchResultNodes.click(
+        function(e) {
+            var s = s_gi('acsin-prod');
+            s.linkTrackVars = 'events';
+            s.linkTrackEvents = 'event1,event2,event3,event4,event5,event6,event7,event22';
+            s.events = 'event22';
+
+            var link = jQuery(this);
+            s.tl(this,'o', link.text());
+        }
+    );
+
+    jQuery("#displayLink a, .csg-hover-box-content a[href*='gp/help/customer/contact-us']").click(
+        function(e) {
+            var s = s_gi('acsin-prod');
+            s.linkTrackVars = 'events,prop15';
+            s.linkTrackEvents = 'event1,event2,event3,event4,event5,event6,event7';
+            s.events = 'event4'; // Clicked the Contact Us button
+
+            var link = jQuery(this);
+            s.prop15 = 'REDESIGN_HELP_GATEWAY_32610:T1|REFUND_VIDEOS_35985:|CARNAC_SHAPSHOT_CLICKSTREAM_DATA_22374:|CARNAC_HELP_MOST_RELEVANT_ORDER_35759:|HELP_CARNAC_REPLACE_QUICK_SOLUTIONS_39214:|CARNAC_HELP_GATEWAY_HTTPS_REDIRECT_37955:|HELP_KM_VIDEO_SS_43037:|HELP_KM_VIDEO_TYO_43090:|HELP_KM_VIDEO_PSLIP_43091:|CS_HELP_ANSWER_BOX_43117:|CS_HELP_ANSWER_BOX_MOBILE_46921:|CS_SEARCH_ANSWER_BOX_REDESIGN_50548:';
+            s.list1 = s.prop15;
+
+            s.tl(this,'o', link.text());
+        }
+    );
+
+    var navTopicNodes;
+    if (jQuery('.cs-help-sidebar-module').length) {
+        navTopicNodes = jQuery('.cs-help-sidebar-module.topic-sidebar .nav-topics li a');
+    } else {
+        navTopicNodes = jQuery('#other-areas-content li').add('.nav-level').add('.nav-siblings').add('.nav-children').add('.nav').find('a');
+    }
+    navTopicNodes.click(
+        function(e) {
+            var s = s_gi('acsin-prod');
+            s.linkTrackVars =' events,eVar12,prop11,prop15';
+            s.linkTrackEvents = 'event1,event2,event3,event4,event5,event6,event7';
+            s.events = 'event5'; // Clicked a left-nav link
+
+            var link = jQuery(this);
+
+            s.prop15 = 'REDESIGN_HELP_GATEWAY_32610:T1|REFUND_VIDEOS_35985:|CARNAC_SHAPSHOT_CLICKSTREAM_DATA_22374:|CARNAC_HELP_MOST_RELEVANT_ORDER_35759:|HELP_CARNAC_REPLACE_QUICK_SOLUTIONS_39214:|CARNAC_HELP_GATEWAY_HTTPS_REDIRECT_37955:|HELP_KM_VIDEO_SS_43037:|HELP_KM_VIDEO_TYO_43090:|HELP_KM_VIDEO_PSLIP_43091:|CS_HELP_ANSWER_BOX_43117:|CS_HELP_ANSWER_BOX_MOBILE_46921:|CS_SEARCH_ANSWER_BOX_REDESIGN_50548:';
+            s.list1 = s.prop15;
+            s.tl(this,'o', link.text());
+        }
+    );
+
+    var takeActionNodes;
+    if (jQuery('.cs-help-sidebar-module').length) {
+        takeActionNodes = jQuery('.cs-help-sidebar-module.take-action-sidebar li a').not('a-button');
+    } else {
+        takeActionNodes = jQuery('.cs-list-jq li a').add('.gray_box div.inner ul.small_list li a').not('.amzn-btn');
+    }
+    takeActionNodes.add("#help-gateway-category-0 .cs-tools a, a[href*='gp/help/customer/forums']");
+    takeActionNodes.click(
+        function(e) {
+            var s = s_gi('acsin-prod');
+            s.linkTrackVars = 'events,eVar17,prop15';
+            s.linkTrackEvents = 'event1,event2,event3,event4,event5,event6,event7';
+            s.events = 'event7'; // Clicked a right hand link
+
+            var link = jQuery(this);
+            s.eVar17 = link.text();
+            s.prop15 = 'REDESIGN_HELP_GATEWAY_32610:T1|REFUND_VIDEOS_35985:|CARNAC_SHAPSHOT_CLICKSTREAM_DATA_22374:|CARNAC_HELP_MOST_RELEVANT_ORDER_35759:|HELP_CARNAC_REPLACE_QUICK_SOLUTIONS_39214:|CARNAC_HELP_GATEWAY_HTTPS_REDIRECT_37955:|HELP_KM_VIDEO_SS_43037:|HELP_KM_VIDEO_TYO_43090:|HELP_KM_VIDEO_PSLIP_43091:|CS_HELP_ANSWER_BOX_43117:|CS_HELP_ANSWER_BOX_MOBILE_46921:|CS_SEARCH_ANSWER_BOX_REDESIGN_50548:';
+            s.list1 = s.prop15;
+            s.tl(this,'o', link.text());
+        }
+    );
+
+    jQuery('#search-help').add('#search-help-bottom').submit(
+        function () {
+            var input_value = this.help_keywords.value;
+            var s = s_gi('acsin-prod');
+            s.linkTrackVars = 'events,eVar47,prop46';
+            s.linkTrackEvents = 'event1,event2,event3,event4,event5,event6,event7,event27';
+            s.events = "event27";
+            s.eVar47 = input_value;
+            s.prop46 = input_value;
+
+            s.tl(this,'o', input_value);
+
+        }
+    );
+
+    amznJQ.onReady('wcs-help-faceted-update', function () {
+        jQuery('.cs-help-search-facets li a').click(
+            function (e) {
+                var s = s_gi('acsin-prod');
+                s.linkTrackVars = 'events,eVar48,eVar49,eVar50';
+                s.linkTrackEvents = 'event1,event2,event3,event4,event5,event6,event7,event28';
+                s.events = 'event28';
+
+                var link = jQuery(this);
+                var facetName = link.closest('fieldset').find('legend').text();
+                var facetValue = link.text();
+                s.eVar48 = '' + '|' + facetName + '|' + facetValue;
+                s.eVar49 = facetName;
+                s.eVar50 = facetValue;
+
+                s.tl(this,'o', link.text());
+            }
+        );
+    });
+
+    var answerBoxLinks = jQuery(".answer-box a").filter(function() {
+                                return jQuery(this).attr('href');
+                            });
+    answerBoxLinks.click(
+        function(e) {
+            var s = s_gi('acsin-prod');
+            s.linkTrackVars = 'events,eVar9,eVar10,prop10,list1';
+            s.linkTrackEvents = 'event1,event2,event3,event4,event5,event6,event7,event13';
+            s.events = 'event13';
+            s.prop10 = '';
+            s.eVar10 = '';
+            s.list1 = 'REDESIGN_HELP_GATEWAY_32610:T1|REFUND_VIDEOS_35985:|CARNAC_SHAPSHOT_CLICKSTREAM_DATA_22374:|CARNAC_HELP_MOST_RELEVANT_ORDER_35759:|HELP_CARNAC_REPLACE_QUICK_SOLUTIONS_39214:|CARNAC_HELP_GATEWAY_HTTPS_REDIRECT_37955:|HELP_KM_VIDEO_SS_43037:|HELP_KM_VIDEO_TYO_43090:|HELP_KM_VIDEO_PSLIP_43091:|CS_HELP_ANSWER_BOX_43117:|CS_HELP_ANSWER_BOX_MOBILE_46921:|CS_SEARCH_ANSWER_BOX_REDESIGN_50548:';
+            
+            var link = jQuery(this);
+            s.tl(this, 'o', link.text());
+        }
+    );
+
+
+
+
+   /************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+   var s_code=s.t();if(s_code)document.write(s_code)
+   //-->
+
+};
+
+amznJQ.onReady('cs-retail-help-omniture', function () {
+
+    csHelpOmniture.event(0);
+
+});
+   <!--
+      /* Ensure a separate start and end tag via a meaningless comment. */
+   //-->
+</script>
+<!-- https://tt.amazon.com/0022849232 -->
+<!-- Serve problematic Javascript from CDN(SharedCSBrowserScripts), to avoid the unexpected tag displayed on JP website. -->
+<noscript>
+<img alt="" border="0" height="1" src="https://amazoncustomerservice.d2.sc.omtrdc.net/b/ss/acsin-prod/1/H.25.2--NS/0" width="1"/>
+</noscript>
+<!--/DO NOT REMOVE/-->
+<!-- End SiteCatalyst code version: H.20.3. -->
+</head>
+<body>
+<!-- BeginNav --><!-- From remote config --><style type="text/css"><!--
+.nav-sprite-v1 .nav-sprite {
+  background-image: url(http://g-ecx.images-amazon.com/images/G/31/gno/sprites/global-sprite-v1._V333157339_.png);
+  background-position: 0 1000px;
+  background-repeat: repeat-x;
+}
+.nav-spinner {
+  background-image: url(http://g-ecx.images-amazon.com/images/G/31/javascripts/lib/popover/images/snake._V138350263_.gif);
+}
+.nav-ajax-loading .nav-ajax-message {
+  background: center center url(http://g-ecx.images-amazon.com/images/G/31/javascripts/lib/popover/images/snake._V138350263_.gif) no-repeat;
+}
+.iss-sprite {
+  background-image: url(http://g-ecx.images-amazon.com/images/G/31/nav2/images/gui/beacon-sprite.png);
+}
+.nav-xshop-small .nav-cobrand {
+  background-image: url(http://g-ecx.images-amazon.com/images/G/31/gno/images/irctc/IRCTC_Logo-small._V329403128_.png);
+}
+.nav-xshop-large .nav-cobrand {
+  background-image: url(http://g-ecx.images-amazon.com/images/G/31/gno/images/irctc/IRCTC_Logo._V329403128_.png);
+}
+--></style>
+<!-- nav-config-asset-injection IN::desktop::standard::49573:C&42994:T1&42980:C::auiDebug=0::isSecure=0::jsOnEvent=navCF navc-R5KxWidWmezlmtSkhgIHbJpB3SeL7fO1UUIDaFYpJyxKteTwqsptOw== rid-0PPZB27VFE6H4MGNYF3N seq-215 (Tue May 19 16:08:32 2015) **CACHED-BY-NCCC** -->
+<link href="http://z-ecx.images-amazon.com/images/G/01/AUIClients/NavAuiAssets-4c6327e530fbf6448291efaf91a613db0dd48b96.min._V2_.css" rel="stylesheet"/>
+<link href="http://z-ecx.images-amazon.com/images/G/01/AUIClients/NavMetaAsset-fa7f4967b0f2d023988c5d05762ecf8e9c981e87._V2_.css" rel="stylesheet"/>
+<!-- nav-config-asset-injection IN::desktop::standard::49573:C&42994:T1&42980:C::auiDebug=0::isSecure=0::jsOnEvent=navCF navc-R5KxWidWmezlmtSkhgIHbJpB3SeL7fO1UUIDaFYpJyxKteTwqsptOw== rid-0PPZB27VFE6H4MGNYF3N seq-215 (Tue May 19 16:08:32 2015) **CACHED-BY-NCCC** -->
+<script>
+(window.AmazonUIPageJS ? AmazonUIPageJS : P).when('navCF').execute(function() {
+  (window.AmazonUIPageJS ? AmazonUIPageJS : P).load.js('http://z-ecx.images-amazon.com/images/G/01/AUIClients/NavAuiAssets-bc95ed9fdbfd9d48a2735db1f845425b78b7b952.min._V2_.js');
+});
+(window.AmazonUIPageJS ? AmazonUIPageJS : P).when('navCF').execute(function() {
+  (window.AmazonUIPageJS ? AmazonUIPageJS : P).load.js('http://z-ecx.images-amazon.com/images/G/01/AUIClients/NavMetaAsset-bdbf725d2dcb9712aa9253bc09af97731b74148f._V2_.js');
+});
+</script>
+<!-- From remote config v3-->
+<script type="text/javascript">
+(function(b){document.createElement("header");var d=function(b){function c(c,e,b){c[b]=function(){a._replay.push(e.concat({m:b,a:[].slice.call(arguments)}))}}var a={};a._sourceName=b;a._replay=[];a.getNow=function(a,c){return c};a.when=function(){var a=[{m:"when",a:[].slice.call(arguments)}],b={};c(b,a,"run");c(b,a,"declare");c(b,a,"publish");c(b,a,"build");return b};c(a,[],"declare");c(a,[],"build");c(a,[],"publish");c(a,[],"importEvent");d._shims.push(a);return a};d._shims=[];b.$Nav||(b.$Nav=d("rcx-nav"));
+b.$Nav.make||(b.$Nav.make=d)})(window);
+
+window.amznJQ && amznJQ.available('navbarJS-global', function(){});
+window._navbarSpriteUrl = 'http://g-ecx.images-amazon.com/images/G/31/gno/sprites/global-sprite-v1._V333157339_.png';
+$Nav.importEvent('navbarJS-global');
+$Nav.importEvent('NavAuiAssets');
+$Nav.declare('img.pixel', 'http://g-ecx.images-amazon.com/images/G/31/x-locale/common/transparent-pixel._V386942716_.gif');
+$Nav.declare('img.sprite', {
+  'png8': 'http://g-ecx.images-amazon.com/images/G/31/gno/sprites/global-sprite-v1._V333157339_.png',
+  'png32': 'http://g-ecx.images-amazon.com/images/G/31/gno/sprites/global-sprite-32-v1._V332848083_.png',
+  'png32-2x': 'http://g-ecx.images-amazon.com/images/G/31/gno/sprites/global-sprite-32-2x-v1._V333157332_.png'
+});
+</script>
+<img alt="" src="http://g-ecx.images-amazon.com/images/G/31/gno/sprites/global-sprite-v1._V333157339_.png" style="display:none"/>
+<img alt="" id="nav_trans_pixel" src="http://g-ecx.images-amazon.com/images/G/31/x-locale/common/transparent-pixel._V386942716_.gif" style="display:none"/>
+<!--Pilu -->
+<script type="text/javascript">
+window.uet && uet('ns');
+
+window._navbar = (function (o) {
+  o.componentLoaded = o.loading = function(){};
+  o.browsepromos = {};
+  o.issPromos = [];
+  return o;
+}(window._navbar || {}));
+
+window.$Nav && $Nav.declare('logEvent.enabled',
+  false);
+
+
+window.$Nav && $Nav.declare('config.lightningDeals',{});
+window.$Nav && $Nav.declare('config.swmStyleData',{});
+window.$Nav && $Nav.declare('config.ajaxProximity', [141,7,60,150]);
+
+</script>
+<!-- navp-0cL/q25VDHBpfCkP4dVH7FS94pKqj8ea6FL24s2JEEtPiOx7OlIDAQ== rid-1VZKJMPXB6PXJ3FMNGFY (Tue May 19 17:12:48 2015) -->
+<style type="text/css"><!--
+    #navbar select#searchDropdownBox {
+      visibility: visible;
+      display: block;
+    }
+    #navbar #nav-search-in {
+      width: 200px;
+    }
+    #navbar #nav-search-in-content {
+      display: none;
+    }
+--></style>
+<style type="text/css"><!--#nav-bar-middle #nav-searchbar .nav-submit-button .nav-submit-input {
+    margin: 0;
+    padding: 0px 11px;
+}
+--></style>
+<header class="nav-locale-in nav-lang-en">
+<div class="nav-subnav-container nav-skin-default nav-sprite-v1" id="navbar" role="navigation">
+<div class="nav-xshop-large" id="nav-cross-shop">
+<div id="nav-logo">
+<a class="nav-logo-link" href="/">
+<span class="nav-logo-base nav-sprite">Amazon</span>
+<span class="nav-logo-ext nav-sprite"></span>
+<span class="nav-logo-locale nav-sprite"></span>
+</a>
+<a class="nav-logo-tagline nav-sprite" href="/"></a>
+</div>
+<div id="nav-cross-shop-content">
+<div id="nav-cross-shop-links">
+<a class="nav_a" href="/gp/yourstore/home" id="nav-your-amazon">Your Amazon.in</a><a class="nav_a" href="/gp/goldbox">Today's Deals</a><a class="nav_a" href="/gift-card-store/b?ie=UTF8&amp;node=3704982031">Gift Cards</a><a class="nav_a" href="/b?ie=UTF8&amp;node=2838698031">Sell</a><a class="nav_a" href="/gp/help/customer/display.html?ie=UTF8&amp;nodeId=200507590">Customer Service</a><a href="/app-nav?_encoding=UTF8&amp;ref=nav_topnav_app_icon2" id="nav-transient-flyout-trigger" style="float: left;width: 23px;height: 24px; padding-left:6px; margin-top:-10px; padding-right:2px;background: url('http://g-ecx.images-amazon.com/images/G/31/img13/mshop/nav/mobile_app_download_icon-2._V309997043_.png') no-repeat;"></a>
+</div>
+</div>
+<div id="welcomeRowTable" style="height:50px">
+<div id="nav-ad-background-style" style="background-position: -800px 0px; background-image: url(http://g-ecx.images-amazon.com/images/G/31/img13/mshop/sweep23/samsung-S6_swm-300x50._V306102577_.png);  height: 56px; margin-bottom: -6px; position: relative;background-repeat: no-repeat;">
+<div id="navSwmSlot">
+<div id="navSwmHoliday" style="background-image: url(http://g-ecx.images-amazon.com/images/G/31/img13/mshop/sweep23/samsung-S6_swm-300x50._V306102577_.png); width: 300px; height: 50px; overflow: hidden;"><img alt="Amazon App Contest" border="0" height="50px" src="http://g-ecx.images-amazon.com/images/G/31/x-locale/common/transparent-pixel._V386942716_.gif" usemap="#nav-swm-holiday-map" width="300px"/></div><div style="display: none;"><map id="nav-swm-holiday-map" name="nav-swm-holiday-map"><area alt="Amazon App Contest" coords="1,2,300,50" href="/gp/feature.html/?ie=UTF8&amp;docId=1000823253" shape="rect"></area></map></div>
+</div>
+</div>
+</div>
+</div>
+<div id="nav-bar-outer">
+<div id="nav-logo-borderfade"><div class="nav-fade-mask"></div><div class="nav-fade nav-sprite"></div></div>
+<div class="nav-sprite" id="nav-bar-inner">
+<div id="nav-bar-left">
+<a alt="Shop By Department" class="nav_a nav-button-outer nav-menu-inactive" href="/gp/site-directory" id="nav-shop-all-button">
+<span class="nav-button-title nav-button-line1">Shop by</span>
+<span class="nav-button-title nav-button-line2">Department<span class="nav-down-arrow"></span></span>
+</a>
+</div>
+<div id="nav-bar-right">
+<a alt="Your Orders" class="nav_a nav-button-outer nav-menu-inactive" href="https://www.amazon.in/ap/signin?_encoding=UTF8&amp;openid.assoc_handle=inflex&amp;openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;openid.mode=checkid_setup&amp;openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&amp;openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&amp;openid.pape.max_auth_age=0&amp;openid.return_to=https%3A%2F%2Fwww.amazon.in%2Fgp%2Fcss%2Fhomepage.html%3Fie%3DUTF8%26ref_%3Dnav_yam_ya" id="nav-your-account">
+<span class="nav-button-title nav-button-line1" id="nav-signin-title">
+              Hello.
+              <span class="nav-button-em" id="nav-signin-text">Sign in</span>
+</span>
+<span class="nav-button-title nav-button-line2">Your Orders<span class="nav-down-arrow"></span></span>
+</a>
+<span class="nav-divider"></span>
+<a alt="Shopping Cart" class="nav_a nav-button-outer nav-menu-inactive" href="/gp/cart/view.html" id="nav-cart">
+<span class="nav-button-title nav-button-line1"> </span>
+<span class="nav-button-title nav-button-line2">Cart<span class="nav-down-arrow"></span></span>
+<span class="nav-cart-button nav-sprite"></span>
+<span class="nav-cart-0" id="nav-cart-count"> </span>
+</a>
+<span class="nav-divider"></span>
+<a alt="Wish List" class="nav_a nav-button-outer nav-menu-inactive" href="/gp/registry/wishlist" id="nav-wishlist">
+<span class="nav-button-title nav-button-line1">Wish</span>
+<span class="nav-button-title nav-button-line2">List<span class="nav-down-arrow"></span></span>
+</a>
+</div>
+<div id="nav-bar-middle">
+<label for="twotabsearchtextbox" id="nav-search-label">
+              Search
+            </label>
+<form accept-charset="utf-8" action="/s" class="nav-searchbar-inner" id="nav-searchbar" method="get" name="site-search" role="search">
+<div class="nav-submit-button nav-sprite">
+<input class="nav-submit-input" title="Go" type="submit" value="Go"/>
+</div>
+<span class="nav-sprite" id="nav-search-in">
+<span data-value="search-alias=aps" id="nav-search-in-content">
+                All
+              </span>
+<span class="nav-down-arrow"></span>
+<select class="searchSelect" data-nav-digest="j6hJTM0VLm6q5VrT9gU97rVLmvg" data-nav-selected="0" id="searchDropdownBox" name="url" title="Search in">
+<option selected="selected" value="search-alias=aps">All Departments</option>
+<option value="search-alias=baby">Baby</option>
+<option value="search-alias=beauty">Beauty</option>
+<option value="search-alias=stripbooks">Books</option>
+<option value="search-alias=automotive">Car &amp; Motorbike</option>
+<option value="search-alias=apparel">Clothing &amp; Accessories</option>
+<option value="search-alias=computers">Computers &amp; Accessories</option>
+<option value="search-alias=electronics">Electronics</option>
+<option value="search-alias=gift-cards">Gift Cards</option>
+<option value="search-alias=grocery">Gourmet &amp; Specialty Foods</option>
+<option value="search-alias=hpc">Health &amp; Personal Care</option>
+<option value="search-alias=kitchen">Home &amp; Kitchen</option>
+<option value="search-alias=jewelry">Jewellery</option>
+<option value="search-alias=digital-text">Kindle Store</option>
+<option value="search-alias=everyday-essentials">KiranaNow</option>
+<option value="search-alias=luggage">Luggage &amp; Bags</option>
+<option value="search-alias=dvd">Movies &amp; TV Shows</option>
+<option value="search-alias=popular">Music</option>
+<option value="search-alias=mi">Musical Instruments</option>
+<option value="search-alias=office-products">Office Products</option>
+<option value="search-alias=pets">Pet Supplies</option>
+<option value="search-alias=shoes">Shoes &amp; Handbags</option>
+<option value="search-alias=software">Software</option>
+<option value="search-alias=sporting">Sports, Fitness &amp; Outdoors</option>
+<option value="search-alias=toys">Toys &amp; Games</option>
+<option value="search-alias=videogames">Video Games</option>
+<option value="search-alias=watches">Watches</option>
+</select>
+</span>
+<div class="nav-searchfield-width">
+<div id="nav-iss-attach">
+<input autocomplete="off" id="twotabsearchtextbox" name="field-keywords" title="Search For" type="text" value=""/>
+</div>
+</div>
+</form>
+</div>
+</div><div id="nav-subnav-container" style="display: none;">
+<ul data-category="help" data-digest="0" id="nav-subnav" style="display: none;">
+<li class="nav-subnav-item nav-category-button"><a class="nav_a" href="#"></a></li><li class="nav-subnav-item"><a class="nav_a"></a></li><li class="nav-subnav-item"><a class="nav_a"></a></li> </ul>
+</div>
+</div>
+</div>
+</header>
+<style>
+#nav-transient-flyout {padding:0px;
+ margin-left:4px !important;
+}
+#nav-transient-flyout h3 {
+  font: 15px arial, sans-serif;
+  color:#e47911;
+  margin: 5px 0;
+}
+ #nav-transient-flyout input{font-size:12px;
+ font-family: arial, sans-serif;
+ width:150px;
+height:30px;
+ border color:#border-color:#a88734;
+background-color:#f3d078;
+border-color:#f3d078; border-style:solid;
+border-radius:3px;
+ background-image: -webkit-linear-gradient(top, #f7dfa5,#f0c14b);
+ background-image: -moz-linear-gradient(top, #f7dfa5,#f0c14b);
+ background-image: -ms-linear-gradient(top, #f7dfa5,#f0c14b);
+ background-image: -o-linear-gradient(top, #f7dfa5,#f0c14b);
+ background-image: linear-gradient(to bottom, #f7dfa5,#f0c14b);
+ text-decoration:none !important;
+}
+ #nav-transient-flyout a{
+ text-decoration:none;
+}
+#nav-transient-flyout a:hover{
+ text-decoration:none !important;
+}
+</style>
+<script type="text/javascript">
+  window.$Nav && $Nav.declare('flyouts.transient', {"html":"<div id=\"nav-transient-flyout\"><h3><p style=\"text-align: center;\">SHOP ANYWHERE. ANYTIME.</p></h3><p style=\"text-align: center;\"><a href=\"/app-nav?ref=nav_topnav_app_flyout_button2\"><input type=\"button\" value=\"Download the App\"/></a><p style=\"text-align: center;\"><a href=\"/app-nav?ref=nav_topnav_app_flyout_img2\"><img src='http://g-ecx.images-amazon.com/images/G/31/img13/mshop/nav/mobile_app_download_flyout.png'></p></a></div>"});
+</script>
+<script type="text/javascript"><!--
+
+
+
+window.$Nav && $Nav.declare('config.navDebugHighres', false);
+
+
+window.$Nav && $Nav.declare('config.upnavHighResImgInfo',
+  {"upnav2xImageHeight":"","upnav2xImagePath":""});
+
+window.$Nav && $Nav.declare('config.upnav2xAiryPreloadImgInfo',
+  {"preloadImgPath":"","preloadImgHeight":""});
+
+window.$Nav && $Nav.declare('config.upnav2xAiryPostSlateImgInfo',
+  {"postslateImgHeight":"","postslateImgPath":""});
+
+window.$Nav && $Nav.declare('config.pageType', 'GPHelp');
+window.$Nav && $Nav.declare('config.subPageType', 'Display');
+
+window.$Nav && $Nav.declare('config.dynamicMenuUrl', '/gp/navigation/ajax/dynamicmenu.html');
+
+window.$Nav && $Nav.declare('config.dismissNotificationUrl',
+  '/gp/navigation/ajax/dismissnotification.html');
+
+window.$Nav && $Nav.declare('config.enableDynamicMenus', true);
+
+window.$Nav && $Nav.declare('config.isInternal', false);
+
+window.$Nav && $Nav.declare('config.isRecognized', false);
+
+window.$Nav && $Nav.declare('config.transientFlyoutTrigger', '#nav-transient-flyout-trigger');
+
+window.$Nav && $Nav.declare('config.subnavFlyoutUrl',
+  '/gp/navigation/ajax/subnav-flyout');
+
+
+window.$Nav && $Nav.declare('config.readyOnATF', false);
+
+window.$Nav && $Nav.declare('config.dynamicMenuArgs',
+  {"rid":"1VZKJMPXB6PXJ3FMNGFY","isPrime":0,"weblabs":"","primeMenuWidth":310});
+
+window.$Nav && $Nav.declare('config.signOutText',
+  null);
+
+window.$Nav && $Nav.declare('config.yourAccountPrimeURL',
+  null);
+
+window.$Nav && $Nav.declare('config.yourAccountPrimeHover',
+  false);
+
+window.$Nav && $Nav.declare('config.searchBackState',
+  {});
+
+(function (i) {
+i.onload = function() {window.uet && uet('ne')};
+i.src = window._navbarSpriteUrl;
+}(new Image()));
+
+window.$Nav && $Nav.declare('config.autoFocus', false);
+
+
+window.$Nav && $Nav.declare('config.responsiveTouchAgents', ["ieTouch"]);
+
+window.$Nav && $Nav.declare('config.responsiveGW',false);
+
+window.$Nav && $Nav.declare('config.velocityFlyoutToggling', false);
+window.$Nav && $Nav.declare('config.velocityFlyoutThreshold', 40);
+
+window.$Nav && $Nav.declare('config.twoClickFlyouts',false);
+
+window.$Nav && $Nav.declare('config.pageHideEnabled',false);
+
+window.$Nav && $Nav.declare('config.sslTriggerType','');
+window.$Nav && $Nav.declare('config.sslTriggerRetry',0);
+
+window.$Nav && $Nav.declare('config.bletchley', false);
+
+window.$Nav && $Nav.declare('config.doubleCart',false);
+
+
+window.$Nav && $Nav.declare('config.fixedBarBeacon',false);
+
+window.$Nav && $Nav.declare('config.signInOverride', false);
+
+window.$Nav && $Nav.declare('config.signInTooltip',false);
+
+
+window.$Nav && $Nav.declare('config.isPrimeMember',false);
+
+window.$Nav && $Nav.declare('config.primeTooltip',false);
+
+window.$Nav && $Nav.declare('config.carnac',false);
+
+window.$Nav && $Nav.declare('config.csYourAccount',false);
+
+window.$Nav && $Nav.declare('config.cartFlyoutDisabled', false);
+
+
+window.$Nav && $Nav.declare('config.ewc',false);
+
+
+window.$Nav && $Nav.declare('config.blackbelt', false);
+window.$Nav && $Nav.declare('config.beaconbelt', false);
+
+window.$Nav && $Nav.declare('config.searchapiEndpoint',false);
+
+    window._navbar = window._navbar || {};
+    window._navbar.browsepromos = window._navbar.browsepromos || {};
+    
+    window.$Nav && $Nav.declare('config.browsePromos', window._navbar.browsepromos);
+
+
+window.$Nav && $Nav.declare('config.extendedFlyout', false);
+
+window.$Nav && $Nav.declare('config.enableBbPrefetch', false);
+
+window.$Nav && $Nav.declare('config.enableBbAaProx', false);
+
+window.$Nav && $Nav.declare('configComplete');
+
+--></script>
+<!--Tilu -->
+<!-- EndNav -->
+<div class="cs-help-v4">
+<!-- Help Header -->
+<div class="cs-help-header">
+<div class="inner">
+<div class="a-row a-spacing-top-small">
+<div class="a-column a-span9">
+<a class="cs-help-title" href="/gp/help/customer/display.html?ie=UTF8&amp;nodeId=200507590">Help &amp; Customer Service</a>
+</div>
+</div>
+</div>
+</div>
+<!-- /Help Header -->
+<div class="cs-help-container">
+<div class="cs-help-content">
+<div>
+<!-- Main content -->
+<div class="cs-help-breadcrumb">
+<a href="/gp/help/customer/display.html?ie=UTF8&amp;nodeId=200507670">Security, Privacy and Accessibility</a><span class="a-list-item"> › </span><a href="/gp/help/customer/display.html?ie=UTF8&amp;nodeId=200571750">Legal information </a><span>›</span>
+</div>
+<a name="GUID-5435A873-80C7-4644-9D3F-7DC30F748F97" shape="rect"></a><h1>Conditions of Use </h1>
+<div>
+<p class="lead">Welcome to Amazon.in. Amazon Seller Services Private Limited and its affiliates provide access to the Amazon.in website (the "website") to you subject to the conditions set out on this page. </p>
+<p>
+<a href="#GUID-5435A873-80C7-4644-9D3F-7DC30F748F97__UL_9D9756BFAF564350B06A8CB27DDDD260" shape="rect">Conditions of Use</a>
+</p>
+<p>
+<a href="#GUID-5435A873-80C7-4644-9D3F-7DC30F748F97__SECTION_C8732367C98F44179B8047A136F529DF" shape="rect">Conditions of Sale</a>
+</p>
+<p>Please read these conditions carefully before using the Amazon.in website. By using the Amazon.in website, you signify your agreement to be bound by these conditions. </p>
+<p>In addition, when you use any current or future Amazon.in service (eg. Wish List or Marketplace) ("Amazon Service"), you will also be subject to the terms, guidelines and conditions applicable to that Amazon Service. ("Terms"). If these Conditions of Use are inconsistent with such Terms, the Terms will control.</p>
+<p>These "Conditions of Use" constitute an electronic record within the meaning of the applicable law. This electronic record is generated by a computer system and does not require any physical or digital signatures. </p>
+<p>
+</p><ul id="GUID-5435A873-80C7-4644-9D3F-7DC30F748F97__UL_9D9756BFAF564350B06A8CB27DDDD260">
+<li>
+<span class="a-list-item">Conditions Relating to Your Use of Amazon.in</span>
+</li>
+<li>
+<span class="a-list-item">Notice and Procedure for Making Claims of Infringement</span>
+</li>
+<li>
+<span class="a-list-item">Notice and Procedure for Notifying Amazon.in of Objectionable Content</span>
+</li>
+</ul>
+<div id="GUID-5435A873-80C7-4644-9D3F-7DC30F748F97__GUID-D207AC00-866B-485F-8611-D6E54084D9B3">
+<a name="GUID-5435A873-80C7-4644-9D3F-7DC30F748F97__GUID-D207AC00-866B-485F-8611-D6E54084D9B3" shape="rect"></a>
+</div>
+<h2>Conditions Relating to Your Use of Amazon.in</h2>
+<p>
+<br clear="none"/>
+</p><ol>
+<li>
+<span class="a-list-item"><strong>Your Account </strong>
+<p>If you use the website, you are responsible for maintaining the confidentiality of your account and password and for restricting access to your computer to prevent unauthorised access to your account. You agree to accept responsibility for all activities that occur under your account or password. You should take all necessary steps to ensure that the password is kept confidential and secure and should inform us immediately if you have any reason to believe that your password has become known to anyone else, or if the password is being, or is likely to be, used in an unauthorised manner. Please ensure that the details you provide us with are correct and complete and inform us immediately of any changes to the information that you provided when registering. You can access and update much of the information you provided us with in the <a href="https://www.amazon.in/youraccount" shape="rect" target="_blank">Your Account</a> area of the website. Amazon.in reserves the right to refuse access to the website, terminate accounts, remove or edit content at any time without notice to you. </p>
+<p>
+<a href="GUID-5435A873-80C7-4644-9D3F-7DC30F748F97" shape="rect">Back to Top</a>
+</p>
+</span>
+</li>
+<li>
+<span class="a-list-item"><strong>Privacy</strong>
+<p>Please review our Privacy Notice, which also governs your visit to Amazon.in, to understand our practices. The personal information / data provided to us by you during the course of usage of Amazon.in will be treated as strictly confidential and in accordance with the Privacy Notice and applicable laws and regulations. If you object to your information being transferred or used, please do not use the website. </p>
+<p>
+<a href="GUID-5435A873-80C7-4644-9D3F-7DC30F748F97" shape="rect">Back to Top</a>
+</p>
+</span>
+</li>
+<li>
+<span class="a-list-item"><strong>E-Platform for Communication</strong>
+<p>You agree, understand and acknowledge that the website is an online platform that enables you to purchase products listed on the website at the price indicated therein at any time from any location. You further agree and acknowledge that Amazon is only a facilitator and is not and cannot be a party to or control in any manner any transactions on the website. Accordingly, the contract of sale of products on the website shall be a strictly bipartite contract between you and the sellers on Amazon.in. </p>
+<p>
+<a href="GUID-5435A873-80C7-4644-9D3F-7DC30F748F97" shape="rect">Back to Top</a>
+</p>
+</span>
+</li>
+<li>
+<span class="a-list-item"><strong>Access to Amazon.in</strong>
+<p>We will do our utmost to ensure that availability of the website will be uninterrupted and that transmissions will be error-free. However, due to the nature of the Internet, this cannot be guaranteed. Also, your access to the website may also be occasionally suspended or restricted to allow for repairs, maintenance, or the introduction of new facilities or services at any time without prior notice. We will attempt to limit the frequency and duration of any such suspension or restriction. </p>
+<p>
+<a href="GUID-5435A873-80C7-4644-9D3F-7DC30F748F97" shape="rect">Back to Top</a>
+</p>
+</span>
+</li>
+<li>
+<span class="a-list-item"><strong>Licence for website access</strong>
+<p>Amazon Seller Services Private Limited grants you a limited licence to access and make personal use of this website, but not to download (other than page caching) or modify it, or any portion of it, except with express written consent of Amazon Seller Services Private Limited and / or its affiliates, as may be applicable. This licence does not include any resale or commercial use of this website or its contents; any collection and use of any product listings, descriptions, or prices; any derivative use of this website or its contents; any downloading or copying of account information for the benefit of another seller; or any use of data mining, robots, or similar data gathering and extraction tools. </p>
+<p>This website or any portion of this website (including but not limited to any copyrighted material, trademarks, or other proprietary information) may not be reproduced, duplicated, copied, sold, resold, visited, distributed or otherwise exploited for any commercial purpose without express written consent of Amazon Seller Services Private Limited and / or its affiliates, as may be applicable. </p>
+<p>You may not frame or use framing techniques to enclose any trademark, logo, or other proprietary information (including images, text, page layout, or form) of Amazon.in and its affiliates without express written consent. You may not use any meta tags or any other "hidden text" utilising Amazon Seller Services Private Limited's or its affiliates' names or trademarks without the express written consent of Amazon Seller Services Private Limited and / or its affiliates, as applicable. Any unauthorised use terminates the permission or license granted by Amazon Seller Services Private Limited and / or its affiliates, as applicable. </p>
+<p>You are granted a limited, revocable, and non-exclusive right to create a hyperlink to the Welcome page of Amazon.in as long as the link does not portray Amazon Seller Services Private Limited, Amazon.in, their affiliates, or their products or services in a false, misleading, derogatory, or otherwise offensive matter. You may not use any Amazon.in logo or other proprietary graphic or trademark as part of the link without express written consent of Amazon Seller Services Private Limited and / or its affiliates, as may be applicable. </p>
+<p>
+<a href="GUID-5435A873-80C7-4644-9D3F-7DC30F748F97" shape="rect">Back to Top</a>
+</p>
+</span>
+</li>
+<li>
+<span class="a-list-item"><strong>Your Conduct</strong>
+<p>You must not use the website in any way that causes, or is likely to cause, the website or access to it to be interrupted, damaged or impaired in any way You understand that you, and not Amazon.in, are responsible for all electronic communications and content sent from your computer to us and you must use the website for lawful purposes only. You must not use the website for any of the following: </p>
+<p>
+</p><ul id="GUID-5435A873-80C7-4644-9D3F-7DC30F748F97__UL_88D80B9C59114FFB8DC1B989F525121D">
+<li>
+<span class="a-list-item">for fraudulent purposes, or in connection with a criminal offense or other unlawful activity</span>
+</li>
+<li>
+<span class="a-list-item">to send, use or reuse any material that does not belong to you; or is illegal, offensive (including but not limited to material that is sexually explicit content or which promotes racism, bigotry, hatred or physical harm), deceptive, misleading, abusive, indecent, harassing, blasphemous, defamatory, libelous, obscene, pornographic, pedophilic or menacing; ethnically objectionable, disparaging or in breach of copyright, trademark, confidentiality, privacy or any other proprietary information or right; or is otherwise injurious to third parties; or relates to or promotes money laundering or gambling; or is harmful to minors in any way; or impersonates another person; or threatens the unity, integrity, security or sovereignty of India or friendly relations with foreign States; or objectionable or otherwise unlawful in any manner whatsoever; or which consists of or contains software viruses, political campaigning, commercial solicitation, chain letters, mass mailings or any "spam</span>
+</li>
+<li>
+<span class="a-list-item">to cause annoyance, inconvenience or needless anxiety</span>
+</li>
+</ul>
+<p>
+<a href="GUID-5435A873-80C7-4644-9D3F-7DC30F748F97" shape="rect">Back to Top</a>
+</p>
+</span>
+</li>
+<li>
+<span class="a-list-item"><strong>Reviews, comments, communications and other content</strong>
+<p>Users of this website may post reviews, comments and other content; send communications; and submit suggestions, ideas, comments, questions, or other information, as long as the content is not illegal, obscene, abusive, threatening, defamatory, invasive of privacy, infringing of intellectual property rights, or otherwise injurious to third parties, or objectionable and does not consist of or contain software viruses, political campaigning, commercial solicitation, chain letters, mass mailings, or any form of "spam." In the event a user uses a false e-mail address, impersonates any person or entity, or otherwise misleads as to the origin of any content. Amazon.in reserves the right (but not the obligation) to remove, refuse, delete or edit any content that in the sole judgement of Amazon.in violates these Conditions of use and, or terminate your permission to access or use this website. </p>
+<p>If you do post content or submit material, and unless we indicate otherwise, you </p>
+<p>
+</p><ul id="GUID-5435A873-80C7-4644-9D3F-7DC30F748F97__UL_C970DBC51F164E76BB34F539BA1AB146">
+<li>
+<span class="a-list-item">(a) grant Amazon Seller Services Private Limited and its affiliates a non-exclusive, royalty-free, irrevocable, perpetual and fully sublicensable rights to use, reproduce, modify, adapt, publish, translate, create derivative works from, distribute, and display such content throughout the world in any media; and</span>
+</li>
+<li>
+<span class="a-list-item">(b) Amazon Seller Services Private Limited and its affiliates and sublicensees the right to use the name that you submit in connection with such content, if they choose.</span>
+</li>
+</ul>
+<p>You agree that the rights you grant above are irrevocable during the entire period of protection of your intellectual property rights associated with such content and material. You agree to waive your right to be identified as the author of such <u id="GUID-5435A873-80C7-4644-9D3F-7DC30F748F97__GUID-AC738BB8-BD42-4D01-8729-647ACA008A69"><a name="GUID-5435A873-80C7-4644-9D3F-7DC30F748F97__GUID-AC738BB8-BD42-4D01-8729-647ACA008A69" shape="rect"></a>content and your right to object to derogatory treatment of such content</u>. You agree to perform all further acts necessary to perfect any of the above rights granted by you to Amazon Seller Services Private Limited, including the execution of deeds and documents, at its request. </p>
+<p>You represent and warrant that you own or otherwise control all of the rights to the content that you post or that you otherwise provide on or through the website; that, as at the date that the content or material is submitted to Amazon.in: (i) the content and material is accurate; (ii) use of the content and material you supply does not breach any applicable Amazon.in policies or guidelines and will not cause injury to any person or entity (including that the content or material is not defamatory); (iii) the content is lawful. You agree to indemnify Amazon Seller Services Private Limited and its affiliates for all claims brought by a third party against it or its affiliates arising out of or in connection with a breach of any of these warranties.</p>
+<p>
+<a href="GUID-5435A873-80C7-4644-9D3F-7DC30F748F97" shape="rect">Back to Top</a>
+</p>
+</span>
+</li>
+<li>
+<span class="a-list-item"><strong>Claims against Objectionable Content</strong>
+<p>Because Amazon.in lists millions of products for sale offered by sellers on the website and hosts many thousands of comments, it is not possible for us to be aware of the contents of each product listed for sale, or each comment or review that is displayed. Accordingly, Amazon.in operates on a "notice and takedown" basis. If you believe that any content on the website is illegal, offensive (including but not limited to material that is sexually explicit content or which promotes racism, bigotry, hatred or physical harm), deceptive, misleading, abusive, indecent, harassing, blasphemous, defamatory, libelous, obscene, pornographic, pedophilic or menacing; ethnically objectionable, disparaging; or is otherwise injurious to third parties; or relates to or promotes money laundering or gambling; or is harmful to minors in any way; or impersonates another person; or threatens the unity, integrity, security or sovereignty of India or friendly relations with foreign States; or objectionable or otherwise unlawful in any manner whatsoever; or which consists of or contains software viruses, (" <strong>Objectionable Content</strong> "), please notify us immediately by following our <a href="#GUID-5435A873-80C7-4644-9D3F-7DC30F748F97__SECTION_40EDB8F8176542D7B4DCF669B3DBC6D4" shape="rect">Notice and Procedure for Notifying of Objectionable Content</a>. Once this procedure has been followed, Amazon.in will make all reasonable endeavours to remove such Objectionable Content complained about within a reasonable time. </p>
+<p>
+<a href="GUID-5435A873-80C7-4644-9D3F-7DC30F748F97" shape="rect">Back to Top</a>
+</p>
+</span>
+</li>
+<li>
+<span class="a-list-item"><strong>Copyright, authors' rights and database rights</strong>
+<p>All content included on the website, such as text, graphics, logos, button icons, images, audio clips, digital downloads, data compilations, and software, is the property of Amazon Seller Services Private Limited, its affiliates or its content suppliers and is protected by India and international copyright, authors' rights and database right laws. The compilation of all content on this website is the exclusive property of Amazon Seller Services Private Limited and its affiliates and is protected by laws of India and international copyright and database right laws. All software used on this website is the property of Amazon Seller Services Private Limited, its affiliates or its software suppliers and is protected by India and international copyright and author' rights laws. </p>
+<p>You may not systematically extract/ or re-utilise parts of the contents of the website without Amazon Seller Services Private Limited and / or its affiliate's (as may be applicable) express written consent. In particular, you may not utilise any data mining, robots, or similar data gathering and extraction tools to extract (whether once or many times) for re-utilisation of any substantial parts of this website, without Amazon Seller Services Private Limited and / or its affiliate's (as may be applicable) express written consent. You may also not create and/ or publish your own database that features substantial (eg: prices and product listings) parts of this website without Amazon Seller Services Private Limited and / or its affiliate's (as may be applicable) express written consent. </p>
+<p>
+<a href="GUID-5435A873-80C7-4644-9D3F-7DC30F748F97" shape="rect">Back to Top</a>
+</p>
+</span>
+</li>
+<li>
+<span class="a-list-item"><strong>Intellectual Property Claims</strong>
+<p>Amazon Seller Services Private Limited and its affiliates respect the intellectual property of others. If you believe that your intellectual property rights have been used in a way that gives rise to concerns of infringement, please follow our <a href="#GUID-5435A873-80C7-4644-9D3F-7DC30F748F97__SECTION_B7710C1693EE4C0A98F7836A18AD37C1" shape="rect">Notice and Procedure for Making Claims of Right Infringements</a>. </p>
+<p>
+<a href="GUID-5435A873-80C7-4644-9D3F-7DC30F748F97" shape="rect">Back to Top</a>
+</p>
+</span>
+</li>
+<li>
+<span class="a-list-item"><strong>Trademarks</strong>
+<p>AMAZON.IN, AMAZON, THE AMAZON LOGO, AND YOU'RE DONE, 1-CLICK, EARTH'S BIGGEST SELECTION, PURCHASE CIRCLES, LISTMANIA, NEW FOR YOU, AMAZON.COM, AMAZON.DE, AMAZON.FR, AMAZON.IT, AMAZON.CO.JP, AMAZON.CA, AMAZON HONOR SYSTEM, PAYPAGE and other marks indicated on our website are trademarks or registered trademarks of Amazon.com, Inc. or its subsidiaries (collectively "Amazon"), in the European Union and/or other jurisdictions. Amazon.in's graphics, logos, page headers, button icons, scripts and service names are the trademarks or trade dress of Amazon. Amazon's trademarks and trade dress may not be used in connection with any product or service that is not Amazon's, in any manner that is likely to cause confusion among customers, or in any manner that disparages or discredits Amazon. All other trademarks not owned by Amazon that appear on this website are the property of their respective owners, who may or may not be affiliated with, connected to, or sponsored by Amazon. </p>
+<p>
+<a href="GUID-5435A873-80C7-4644-9D3F-7DC30F748F97" shape="rect">Back to Top</a>
+</p>
+</span>
+</li>
+<li>
+<span class="a-list-item"><strong>Patents</strong>
+<p>One or more patents apply to the website and to the features and services accessible via the website, including without limitation: US Patent Nos. 5,715,399; 5,960,411; 6,006,225; 6,029,141; 6,064,980; 6,144,958; 6,169,986; 6,185,558; 6,266,649; 6,317,722; 6,360,254; 6,366,910; 6,401,084 and all corresponding foreign counterparts. </p>
+<p>
+<a href="GUID-5435A873-80C7-4644-9D3F-7DC30F748F97" shape="rect">Back to Top</a>
+</p>
+</span>
+</li>
+<li>
+<span class="a-list-item"><strong>Disclaimer</strong>
+<p>You acknowledge and undertake that you are accessing the services on the website and transacting at your own risk and are using your best and prudent judgment before entering into any transactions through the website. We shall neither be liable nor responsible for any actions or inactions of sellers nor any breach of conditions, representations or warranties by the sellers or manufacturers of the products and hereby expressly disclaim and any all responsibility and liability in that regard. We shall not mediate or resolve any dispute or disagreement between you and the sellers or manufacturers of the products. </p>
+<p>We further expressly disclaim any warranties or representations (express or implied) in respect of quality, suitability, accuracy, reliability, completeness, timeliness, performance, safety, merchantability, fitness for a particular purpose, or legality of the products listed or displayed or transacted or the content (including product information and/or specifications) on the website. While we have taken precautions to avoid inaccuracies in content, this website, all content, information, software, products, services and related graphics are provided as is, without warranty of any kind. We do not implicitly or explicitly support or endorse the sale or purchase of any products on the website. At no time shall any right, title or interest in the products sold through or displayed on the website vest with Amazon nor shall Amazon have any obligations or liabilities in respect of any transactions on the website.</p>
+<p>
+<a href="GUID-5435A873-80C7-4644-9D3F-7DC30F748F97" shape="rect">Back to Top</a>
+</p>
+</span>
+</li>
+<li>
+<span class="a-list-item"><strong>Indemnity and Release</strong>
+<p>You shall indemnify and hold harmless Amazon Seller Services Private Limited, its subsidiaries, affiliates and their respective officers, directors, agents and employees, from any claim or demand, or actions including reasonable attorney's fees, made by any third party or penalty imposed due to or arising out of your breach of these Conditions of Use or any document incorporated by reference, or your violation of any law, rules, regulations or the rights of a third party. </p>
+<p>You hereby expressly release Amazon Seller Services Private Limited and/or its affiliates and/or any of its officers and representatives from any cost, damage, liability or other consequence of any of the actions/inactions of the vendors and specifically waiver any claims or demands that you may have in this behalf under any statute, contract or otherwise. </p>
+<p>
+<a href="GUID-5435A873-80C7-4644-9D3F-7DC30F748F97" shape="rect">Back to Top</a>
+</p>
+</span>
+</li>
+<li>
+<span class="a-list-item"><strong>Children</strong>
+<p>Use of Amazon.in is available only to persons who can form a legally binding contract under the Indian Contract Act, 1872. If you are a minor i.e. under the age of 18 years, you may use Amazon.in only with the involvement of a parent or guardian. </p>
+<p>
+<a href="GUID-5435A873-80C7-4644-9D3F-7DC30F748F97" shape="rect">Back to Top</a>
+</p>
+</span>
+</li>
+<li>
+<span class="a-list-item"><strong>Other Businesses</strong>
+<p>Parties other than Amazon Seller Services Private Limited and its affiliates may operate stores, provide services, or sell product lines on Amazon.in. For example, businesses and individuals offer products via Marketplace. In addition, we provide links to the websites of affiliated companies and certain other businesses. We are not responsible for examining or evaluating, and we do not warrant or endorse the offerings of any of these businesses or individuals, or the content of their websites. Amazon Seller Services Private Limited does not assume any responsibility or liability for the actions, products, and content of any of these and any other third-parties. You can tell when a third-party is involved in your transactions, and we may share customer information related to those transactions with that third-party. You should carefully review their privacy statements and other conditions of use. </p>
+<p>
+<a href="GUID-5435A873-80C7-4644-9D3F-7DC30F748F97" shape="rect">Back to Top</a>
+</p>
+</span>
+</li>
+<li>
+<span class="a-list-item"><strong>Communications</strong>
+<p>When you visit Amazon.in or send e-mails to us, you are communicating with us electronically. You will be required to provide a valid phone number while placing an order with us. We may communicate with you by e-mail, SMS, phone call or by posting notices on the website or by any other mode of communication. For contractual purposes, you consent to receive communications including SMS, e-mail or phone calls from us with respect to your order. </p>
+<p>
+<a href="GUID-5435A873-80C7-4644-9D3F-7DC30F748F97" shape="rect">Back to Top</a>
+</p>
+</span>
+</li>
+<li>
+<span class="a-list-item"><strong>Losses</strong>
+<p>We will not be responsible for any business loss (including loss of profits, revenue, contracts, anticipated savings, data, goodwill or wasted expenditure) or any other indirect or consequential loss that is not reasonably foreseeable to both you and us when you commenced using the website. </p>
+<p>
+<a href="GUID-5435A873-80C7-4644-9D3F-7DC30F748F97" shape="rect">Back to Top</a>
+</p>
+</span>
+</li>
+<li>
+<span class="a-list-item"><strong>Alteration of Service or Amendements to the Conditions</strong>
+<p>We reserve the right to make changes to our website, policies, and these Conditions of Use at any time. You will be subject to the policies and Conditions of Use in force at the time that you use the website or that you order goods from us, unless any change to those policies or these conditions is required to be made by law or government authority (in which case it will apply to orders previously placed by you). If any of these conditions is deemed invalid, void, or for any reason unenforceable, that condition will be deemed severable and will not affect the validity and enforceability of any remaining condition. </p>
+<p>
+<a href="GUID-5435A873-80C7-4644-9D3F-7DC30F748F97" shape="rect">Back to Top</a>
+</p>
+</span>
+</li>
+<li>
+<span class="a-list-item"><strong>Events beyond our reasonable control</strong>
+<p>We will not be held responsible for any delay or failure to comply with our obligations under these conditions if the delay or failure arises from any cause which is beyond our reasonable control. This condition does not affect your statutory rights. </p>
+<p>
+<a href="GUID-5435A873-80C7-4644-9D3F-7DC30F748F97" shape="rect">Back to Top</a>
+</p>
+</span>
+</li>
+<li>
+<span class="a-list-item"><strong>Waiver</strong>
+<p>If you breach these conditions and we take no action, we will still be entitled to use our rights and remedies in any other situation where you breach these conditions. </p>
+<p>
+<a href="GUID-5435A873-80C7-4644-9D3F-7DC30F748F97" shape="rect">Back to Top</a>
+</p>
+</span>
+</li>
+<li>
+<span class="a-list-item">Governing law and Jurisdiction<p>These conditions are governed by and construed in accordance with the laws of India. You agree, as we do, to submit to the exclusive jurisdiction of the courts at Delhi. </p>
+<p>
+<a href="GUID-5435A873-80C7-4644-9D3F-7DC30F748F97" shape="rect">Back to Top</a>
+</p>
+</span>
+</li>
+<li>
+<span class="a-list-item"><strong>Our Details</strong>
+<p>This website is operated by Amazon Seller Services Private Limited. </p>
+<p>For the Amazon.in website, you could contact us by visiting: <a href="https://www.amazon.in/contactus" shape="rect" target="_blank"> www.amazon.in/gp/help/contact-us</a>
+</p>
+<p>
+<a href="GUID-5435A873-80C7-4644-9D3F-7DC30F748F97" shape="rect">Back to Top</a>
+</p>
+</span>
+</li>
+<li>
+<span class="a-list-item"><strong>Amazon Software Terms</strong>
+<p>In addition to these Conditions of Use, the terms found <a href="#GUID-5435A873-80C7-4644-9D3F-7DC30F748F97__GUID-173CE293-3B47-4D76-A6AA-500759EAB1D2" shape="rect">here</a> apply to any software (including any updates or upgrades to the software and any related documentation) that we make available to you from time to time for your use in connection with Amazon Services (the "Amazon Software"). </p>
+<p>
+<a href="GUID-5435A873-80C7-4644-9D3F-7DC30F748F97" shape="rect">Back to Top</a>
+</p>
+</span>
+</li>
+</ol>
+<div id="GUID-5435A873-80C7-4644-9D3F-7DC30F748F97__SECTION_B7710C1693EE4C0A98F7836A18AD37C1">
+<a name="GUID-5435A873-80C7-4644-9D3F-7DC30F748F97__SECTION_B7710C1693EE4C0A98F7836A18AD37C1" shape="rect"></a>
+</div>
+<h2>Notice and Procedure for Making Claims of Right Infringements</h2>
+<p>If you believe that your rights are being infringed, you may fill out and submit the <a href="https://www.amazon.in/gp/help/reports/infringement" shape="rect" target="_blank">Notice Form</a>. We respond expeditiously to rights owners and their agents who complete and submit the Notice Form to communicate concerns about any alleged infringement. </p>
+<p>Upon receipt of a Notice Form we may take certain actions, including removing information or an item, all of which are taken without any admission as to liability and without prejudice to any rights, remedies or defenses, all of which are expressly reserved. Furthermore, in submitting a Notice Form, you grant to Amazon the right to use, reproduce, modify, adapt, publish, translate, create derivative works from, and display its content throughout the world in any media. This includes forwarding the Notice Form to the parties involved in the provision of the allegedly infringing content. You agree to indemnify Amazon for all claims brought by a third party against Amazon arising out of or in connection with the submission of a Notice Form. </p>
+<p>Note on Third Party Seller Listings: Please keep in mind that Third Party Seller listings are merely hosted on Amazon.in and are posted solely at the direction of Third Party Sellers who may be contacted via their "Seller Information" page, accessible from any of their listings. </p>
+<p>ASIN and ISBN-10, Defined: "ASIN" stands for Amazon Standard Item (or Identification) Number and is a ten (10) character identifier. It can be found below any listing under "Product Details". "ISBN-10" stands for International Standard Book Number and is a ten (10) digit identifier that can be found on some book listings under "Product Details".</p>
+<p> Important Warning: giving false, misleading or inaccurate information in the Notice Form to Amazon may result in civil and/or criminal liability. You should contact a legal advisor should you have any questions.</p>
+<p>
+<strong>Notice Form:</strong>
+</p>
+ If you believe that your rights are being violated by an item or information on the Amazon.in site, you may fill out and submit the Notice Form (below). This signed form can be sent via E-mail PDF or Fax to the Grievance Officer: <p>e-mail PDF: notice@Amazon.in </p>
+<p>Subject Line: Claim of Infringement or Fax: 040-39922887</p>
+<p> or </p>
+<p>Amazon Seller Services Pvt. Ltd. </p>
+<p>Ground Floor </p>
+<p>Eros Plaza, Eros Corporate Tower </p>
+<p>Nehru Place </p>
+<p>New Delhi 110019</p>
+<p>(We will accept a signed PDF via e-mail with the subject line "Claim of Infringement" or Fax, unless by prior agreement we have agreed with you for an alternative receipt mechanism). </p>
+<p>Please fill out the Notice form using the corresponding numbered paragraphs to frame your communication.</p>
+<div id="GUID-5435A873-80C7-4644-9D3F-7DC30F748F97__SECTION_29EDD83C72D04863A5ADFA6227B81363">
+<a name="GUID-5435A873-80C7-4644-9D3F-7DC30F748F97__SECTION_29EDD83C72D04863A5ADFA6227B81363" shape="rect"></a>
+</div>
+<h2>Notice Form</h2>
+<p>Re: www.Amazon.in </p>
+<p>I, <strong>[INSERT FULL NAME AND TITLE</strong> ] of <strong>[COMPANY NAME, IF APPLICABLE]</strong> , state as follows: </p>
+<br clear="none"/>
+<ol>
+<li>
+<span class="a-list-item"> <u id="GUID-5435A873-80C7-4644-9D3F-7DC30F748F97__GUID-D203AC01-E21C-401D-9C05-F7BF508D49BB"><a name="GUID-5435A873-80C7-4644-9D3F-7DC30F748F97__GUID-D203AC01-E21C-401D-9C05-F7BF508D49BB" shape="rect"></a>Contact information</u>: (a) Your and/ or your company's name, address, telephone number and contact email address; (b)The contact email address and/or name which we will provide to Third Party Sellers (if relevant) so they may contact you to resolve any issues regarding your notification to us. If you do not provide a separate contact email, you authorize us to use the contact information you provide in (1)(a).</span>
+</li>
+<li>
+<span class="a-list-item"> <u id="GUID-5435A873-80C7-4644-9D3F-7DC30F748F97__GUID-9B32A2DA-99D2-4161-9E08-5814FCDA6DAE"><a name="GUID-5435A873-80C7-4644-9D3F-7DC30F748F97__GUID-9B32A2DA-99D2-4161-9E08-5814FCDA6DAE" shape="rect"></a>Listing's ASIN (or ISBN-13 if applicable) and Allegation of Infringed Right:</u> (a) The listing's ASIN/ISBN-13 number or detailed description of where the information that you claim is infringing your rights is located on the site; if regarding a Third Party Seller listing please also provide the name used to identify the Seller on the site (look for "dispatched and sold by _____" or "by ______" in the listing). (b) A description of your intellectual property right(s) that you claim has/have been infringed (e.g. copyright, trademark or patent) by the information of/for this ASIN/ISBN-13. [REPEAT (2)(a-b) as necessary for multiple items, see example Notice Form here.]</span>
+</li>
+<li>
+<span class="a-list-item">Include the following statement: "I have a good faith belief that the portion of the listing(s) described above violate(s) the intellectual property rights owned by the intellectual property owner or its agent, nor is such use otherwise permissible under law."</span>
+</li>
+<li>
+<span class="a-list-item">Include the following statement: "I represent that the information in this notification is true and correct and that I am the intellectual property owner or authorised to act on behalf of the intellectual property owner for the rights described above."</span>
+</li>
+<li>
+<span class="a-list-item">Sign the Notice Form.</span>
+</li>
+</ol>
+<div id="GUID-5435A873-80C7-4644-9D3F-7DC30F748F97__SECTION_40EDB8F8176542D7B4DCF669B3DBC6D4">
+<a name="GUID-5435A873-80C7-4644-9D3F-7DC30F748F97__SECTION_40EDB8F8176542D7B4DCF669B3DBC6D4" shape="rect"></a>
+</div>
+<h2>Notice and Procedure for Notifying Amazon.in of Objectionable Content</h2>
+<p>If you believe that any content on, or advertised for sale on, the website contains any Objectionable Content as defined under Section 8 above, please notify us immediately by copying the Notice to Amazon.in of Objectionable Content below into your word processor program, complete it in accordance with the instructions set out in the Notice and send a signed copy via E-mail PDF or Fax to the Grievance Officer: </p>
+<p>E-mail PDF: notice@amazon.in </p>
+<p>Subject Line: Claim of Objectionable Content </p>
+<p>or</p>
+<p>Fax: 040-39922887 </p>
+<p>or</p>
+<p>Amazon Seller Services Private Limited </p>
+<p>Ground Floor,</p>
+<p>Eros Plaza, Eros Corporate Tower, </p>
+<p>Nehru Place, </p>
+<p>New Delhi 110019</p>
+<p>Please note that this procedure is exclusively for notifying Amazon.in of Objectionable Content on or advertised for sale on the Amazon.in website. Please provide your address, telephone number, and e-mail address when sending the notice to us. </p>
+<p>
+<strong>Important Warning:</strong> Giving false, misleading or inaccurate information in the Notice to Amazon.in may result in civil and/ or criminal liability.</p>
+<p>
+<a href="GUID-5435A873-80C7-4644-9D3F-7DC30F748F97" shape="rect">Back to Top</a>
+</p>
+<div id="GUID-5435A873-80C7-4644-9D3F-7DC30F748F97__SECTION_56C2A987CE1A45C9A187C499DBDD71DA">
+<a name="GUID-5435A873-80C7-4644-9D3F-7DC30F748F97__SECTION_56C2A987CE1A45C9A187C499DBDD71DA" shape="rect"></a>
+</div>
+<h2>Notice to Amazon.in of Objectionable Content</h2>
+<p> In the matter of Amazon.in </p>
+<p>I, <strong>[Please set out your full name]</strong> of <strong>[please give your postal address]</strong>, <strong>[please set your occupation]</strong> , says as follows: </p>
+<p>
+<br clear="none"/>
+</p><ol>
+<li>
+<span class="a-list-item">I refer to the website www.Amazon.in ("the website"). I make this statement in support of my giving Amazon.in notice that, via the website, it is causing or contributing to the publication of Objectionable Content.</span>
+</li>
+<li>
+<span class="a-list-item">The Objectionable Content (delete whichever paragraph is not applicable): (a) appear in a book being sold by Amazon.in via the website entitled <strong>[please state the book name and its author]</strong>. The Objectionable Content appear on page [<strong>please state the page number(s) where you consider the words constitute Objectionable Content]</strong>. OR (b) appear on the website at <strong>[please cut and paste the address of the relevant Web page from the website where the Objectionable Content appears]</strong>.</span>
+</li>
+<li>
+<span class="a-list-item">The words/ content that I consider to be Objectionable Content are <strong>[please repeat the exact words you are complaining about]</strong>.</span>
+</li>
+<li>
+<span class="a-list-item">This content is Objectionable Content because <strong>[please state why you consider the content is Objectionable Content]</strong>.</span>
+</li>
+<li>
+<span class="a-list-item">I understand that this statement may be used in any court proceedings that may arise out of or relating to the Objectionable Content which I have complained about.</span>
+</li>
+</ol>
+<p>
+<strong>Statement of Truth</strong>
+</p>
+<p>I declare the facts stated above to be true.</p>
+<p>
+<strong>Signed:</strong>
+</p>
+<p>
+<strong>Dated:</strong>
+</p>
+<p>Please read the conditions of use carefully before using the Amazon.in website. By using the Amazon.in website, you signify your agreement to be bound by these conditions. </p>
+<p>
+<a href="GUID-5435A873-80C7-4644-9D3F-7DC30F748F97" shape="rect">Back to Top</a>
+</p>
+<div id="GUID-5435A873-80C7-4644-9D3F-7DC30F748F97__SECTION_A503F56BE16E422A981FEBEC412140D9">
+<a name="GUID-5435A873-80C7-4644-9D3F-7DC30F748F97__SECTION_A503F56BE16E422A981FEBEC412140D9" shape="rect"></a>
+</div>
+<h2>Amazon Software Terms</h2>
+<p>
+<br clear="none"/>
+</p><ol>
+<li>
+<span class="a-list-item"><strong>Use of the Amazon Software</strong>
+<p>You may use Amazon Software solely for purposes of enabling you to use and enjoy the Amazon Services as provided by Amazon, and as permitted by the Conditions of Use, these Amazon Software Terms and any Terms. You may not incorporate any portion of the Amazon Software into your own programs or compile any portion of it in combination with your own programs, transfer it for use with another service, or sell, rent, lease, lend, loan, distribute or sub-license the Amazon Software or otherwise assign any rights to the Amazon Software in whole or in part. You may not use the Amazon Software for any illegal purpose. We may cease providing any Amazon Software and we may terminate your right to use any Amazon Software at any time. Your rights to use the Amazon Software will automatically terminate without notice from us if you fail to comply with any of these Amazon Software Terms, the Conditions of Use or any other Terms. Additional third party terms contained within or distributed with certain Amazon Software that are specifically identified in related documentation may apply to that Amazon Software (or software incorporated with the Amazon Software) and will govern the use of such software in the event of a conflict with these Conditions of Use. All software used in any Amazon Service is the property of Amazon and/or its affiliates or its software suppliers and protected by laws of India including but not limited to any other applicable copyright laws. </p>
+</span>
+</li>
+<li>
+<span class="a-list-item"><strong>Use of Third Party Services</strong>
+<p>When you use the Amazon Software, you may also be using the services of one or more third parties, such as a wireless carrier or a mobile platform provider. Your use of these third party services may be subject to the separate policies, terms of use, and fees of these third parties. </p>
+</span>
+</li>
+<li>
+<span class="a-list-item"><strong>No Reverse Engineering</strong>
+<p>You may not, and you will not encourage, assist or authorize any other person to copy, modify, reverse engineer, decompile or disassemble, or otherwise tamper with, the Amazon Software, whether in whole or in part, or create any derivative works from or of the Amazon Software. </p>
+</span>
+</li>
+</ol>
+<p>
+<strong>Updates</strong>
+</p>
+<p>In order to keep the Amazon Software up-to-date, we may offer automatic or manual updates at any time and without notice to you. </p>
+<p>
+<a href="GUID-5435A873-80C7-4644-9D3F-7DC30F748F97" shape="rect">Back to Top</a>
+</p>
+<div id="GUID-5435A873-80C7-4644-9D3F-7DC30F748F97__SECTION_C8732367C98F44179B8047A136F529DF">
+<a name="GUID-5435A873-80C7-4644-9D3F-7DC30F748F97__SECTION_C8732367C98F44179B8047A136F529DF" shape="rect"></a>
+</div>
+<h2>Conditions of Sale (between Sellers and the Customer)</h2>
+<p>
+<strong>Please read these conditions carefully before placing an order for any products with the Sellers ("We" or "Our" or "Us", wherever applicable) on the Amazon.in (the website). These conditions signify your agreement to be bound by these conditions.</strong>
+</p>
+<p>In addition, when you use any current or future Amazon.in service (eg: Wishlist or Marketplace or Amazon MP3 Service), you will also be subject to the terms, guidelines and conditions applicable to that service ("Terms"). If these Conditions of Sale are inconsistent with such Terms, the Terms will control. </p>
+<br clear="none"/>
+<ol>
+<li>
+<span class="a-list-item"><strong>Conditions Relating to the Sale of Products to You</strong>
+<p>This section deals with conditions relating to the sale of products on the website by us to you. </p>
+</span>
+</li>
+<li>
+<span class="a-list-item"><strong>Our Contract</strong>
+<p>Your order is an offer to us to buy the product(s) in your order. When you place an order to purchase a product from us, you will receive an e-mail confirming receipt of your order and containing the details of your order (the "Order Confirmation E-mail"). The Order Confirmation E-mail is acknowledgement that we have received your order, and does not confirm acceptance of your offer to buy the product(s) ordered. We only accept your offer, and conclude the contract of sale for a product ordered by you, when the product is dispatched to you and an e-mail confirmation is sent to you that the product has been dispatched to you (the "Dispatch Confirmation E-mail"). If your order is dispatched in more than one package, you may receive a separate Dispatch Confirmation E-mail for each package, and each Dispatch Confirmation E-mail and corresponding dispatch will conclude a separate contract of sale between you and us for the product(s) specified in that Dispatch Confirmation E-mail. </p>
+<p>Your contract is with us (the Sellers) and you confirm that the product(s) ordered by you are purchased for your internal / personal purpose and not for re-sale. You authorize us to declare and provide declaration to any governmental authority on your behalf stating the aforesaid purpose of the products ordered by you on the website. </p>
+<p>You can cancel your order for a product at no cost any time before we send the Dispatch Confirmation E-mail relating to that product. </p>
+<p>Please note that we sell products only in quantities which correspond to the typical needs of an average household. This applies both to the number of products ordered within a single order and the placing of several orders for the same product where the individual orders comprise a quantity typical for a normal household. </p>
+<p>
+<a href="GUID-5435A873-80C7-4644-9D3F-7DC30F748F97" shape="rect">Back to Top</a>
+</p>
+</span>
+</li>
+<li>
+<span class="a-list-item"><strong>Returns</strong>
+<p>Please review our Returns Policy, which applies to products sold by us. </p>
+<p>
+<a href="GUID-5435A873-80C7-4644-9D3F-7DC30F748F97" shape="rect">Back to Top</a>
+</p>
+</span>
+</li>
+<li>
+<span class="a-list-item"><strong>Pricing and availability</strong>
+<p>We list availability information for products sold by us on the website, including on each product information page. Beyond what we say on that page or otherwise on the website, we cannot be more specific about availability. Please note that dispatch estimates are just that. They are not guaranteed dispatch times and should not be relied upon as such. As we process your order, you will be informed by e-mail if any products you order turn out to be unavailable. </p>
+<p>For more details, please review our <a href="https://www.amazon.in/gp/help/customer/display.html/?nodeId=201202540" shape="rect" target="_blank">Pricing</a> policy and our <a href="https://www.amazon.in/gp/help/customer/display.html/?nodeId=200530030" shape="rect" target="_blank">Availability Guide</a>, both of which apply to products ordered from us. </p>
+<p>All prices are inclusive of VAT unless stated otherwise. </p>
+<p>
+<a href="GUID-5435A873-80C7-4644-9D3F-7DC30F748F97" shape="rect">Back to Top</a>
+</p>
+</span>
+</li>
+<li>
+<span class="a-list-item"><strong>Taxes</strong>
+<p>You shall be responsible for payment of all fees/costs/charges associated with the purchase of products from us and you agree to bear any and all applicable taxes/VAT, cesses etc. levied thereon. </p>
+<p>
+<a href="GUID-5435A873-80C7-4644-9D3F-7DC30F748F97" shape="rect">Back to Top</a>
+</p>
+</span>
+</li>
+<li>
+<span class="a-list-item"><strong>Health &amp; Safety</strong>
+<p>By purchasing any product from our Home &amp; Kitchen shop, you acknowledge that you have read and understood our Health &amp; Safety Guidelines. </p>
+<p>
+<a href="GUID-5435A873-80C7-4644-9D3F-7DC30F748F97" shape="rect">Back to Top</a>
+</p>
+</span>
+</li>
+<li>
+<span class="a-list-item"><strong>Children</strong>
+<p>Use of Amazon.in is available only to persons who can form a legally binding contract under the Indian Contract Act, 1872. If you are a minor i.e. under the age of 18 years, you may purchase only with the involvement of a parent or guardian. </p>
+<p>
+<a href="GUID-5435A873-80C7-4644-9D3F-7DC30F748F97" shape="rect">Back to Top</a>
+</p>
+</span>
+</li>
+<li>
+<span class="a-list-item"><strong>Communications</strong>
+<p>When you send e-mails to us, you are communicating with us electronically. You will be required to provide a valid phone number while placing an order with us. We may communicate with you by e-mail, SMS, phone call or by posting notices on the website or by any other mode of communication. For contractual purposes, you consent to receive communications including SMS, e-mails or phone calls from us with respect to your order. </p>
+<p>
+<a href="GUID-5435A873-80C7-4644-9D3F-7DC30F748F97" shape="rect">Back to Top</a>
+</p>
+</span>
+</li>
+<li>
+<span class="a-list-item"><strong>Losses</strong>
+<p>We will not be responsible for any business loss (including loss of profits, revenue, contracts, anticipated savings, data, goodwill or wasted expenditure) or any other indirect or consequential loss that is not reasonably foreseeable to both you and us when a contract for the sale of goods by us to you was formed. </p>
+<p>
+<a href="GUID-5435A873-80C7-4644-9D3F-7DC30F748F97" shape="rect">Back to Top</a>
+</p>
+</span>
+</li>
+<li>
+<span class="a-list-item"><strong>Alteration or Amendments to the Conditions</strong>
+<p>We reserve the right to make changes to our policies, and these Conditions of Sale at any time. You will be subject to the policies and Conditions of Sale in force at the time you order goods from us, unless any change to those policies or these conditions is required to be made by law or government authority (in which case it will apply to orders previously placed by you). If any of these conditions is deemed invalid, void, or for any reason unenforceable, that condition will be deemed severable and will not affect the validity and enforceability of any remaining condition. </p>
+<p>
+<a href="GUID-5435A873-80C7-4644-9D3F-7DC30F748F97" shape="rect">Back to Top</a>
+</p>
+</span>
+</li>
+<li>
+<span class="a-list-item"><strong>Events beyond our reasonable control</strong>
+<p>We will not be held responsible for any delay or failure to comply with our obligations under these conditions if the delay or failure arises from any cause which is beyond our reasonable control. This condition does not affect your statutory rights. </p>
+<p>
+<a href="GUID-5435A873-80C7-4644-9D3F-7DC30F748F97" shape="rect">Back to Top</a>
+</p>
+</span>
+</li>
+<li>
+<span class="a-list-item"><strong>Waiver</strong>
+<p>If you breach these conditions and we take no action, we will still be entitled to use our rights and remedies in any other situation where you breach these conditions. </p>
+<p>
+<a href="GUID-5435A873-80C7-4644-9D3F-7DC30F748F97" shape="rect">Back to Top</a>
+</p>
+</span>
+</li>
+<li>
+<span class="a-list-item"><strong>Governing Law and Jurisdiction</strong>
+<p>These conditions are governed by and construed in accordance with the laws of India, and the application of the United Nations Convention on Contracts for the International Sale of Goods is expressly excluded. You agree, as we do, to submit to the exclusive jurisdiction of the courts at Delhi. </p>
+<p>
+<a href="GUID-5435A873-80C7-4644-9D3F-7DC30F748F97" shape="rect">Back to Top</a>
+</p>
+</span>
+</li>
+</ol>
+</div>
+<span class="focus cs-none">Please read these conditions of use carefully before using
+the Amazon.in website. By using the Amazon.in website, you
+signify your agreement to be bound by these conditions.</span>
+<script language="javascript">
+  if ( ! window.stageMarkers) {
+     window.stageMarkers = {};
+     window.stageMarkers.count = {};
+     window.stageMarkers.stage = function (stage, t) {
+       window.stageMarkers.count[stage] = 1 + (window.stageMarkers.count[stage] ? window.stageMarkers.count[stage] : 0);
+       if (window.stageMarkers.count[stage] >= t) {
+         amznJQ.completedStage(stage);
+       }
+     }
+  }
+</script>
+<div id="cf-div" style="display:none;">
+<img alt="" border="0" height="1" onload="if (typeof uet == 'function') { uet('cf'); }" src="http://g-ecx.images-amazon.com/images/G/31/x-locale/common/transparent-pixel._V386942716_.gif" width="1"/><img alt="" border="0" height="1" onload="if (typeof uet == 'function') { uet('cf'); }" src="http://ecx.images-amazon.com/images/G/31/x-locale/common/transparent-pixel._V386942716_.gif" width="1"/>
+</div>
+</div>
+<div class="a-section a-spacing-small" id="csg-search-cu">
+<hr class="a-spacing-extra-large a-spacing-top-extra-large a-divider-normal"/>
+<div class="a-row csg-search-box">
+<form action="/gp/help/customer/display.html?ie=UTF8&amp;nodeId=" id="search-help" method="get" name="search-help">
+<div class="a-column a-span10">
+<div class="a-row">
+<div class="a-search a-span12"><i class="a-icon a-icon-search"></i><input autocomplete="off" class="a-input-text a-span12" id="helpsearch" maxlength="100" name="help_keywords" placeholder="Search Help" type="search"/></div>
+</div>
+<div class="a-row">
+<div class="a-section a-text-left a-span12 a-box" id="help_srch_sggst" style="display: none;">
+</div>
+</div>
+</div>
+<div class="a-column a-span2 a-span-last">
+<span class="a-button a-button-span12 a-button-dark" id="helpSearchSubmit"><span class="a-button-inner"><input aria-labelledby="helpSearchSubmit-announce" class="a-button-input" type="submit"/><span aria-hidden="true" class="a-button-text" id="helpSearchSubmit-announce">Go
+	                </span></span></span>
+</div>
+<input name="search" type="hidden" value="true"/>
+<input name="nodeId" type="hidden" value="200545940"/>
+<input id="searchPlaceholder" name="kwHidden" type="hidden" value="true"/>
+<input id="searchAutocomplete" name="sprefix" type="hidden"/>
+</form>
+</div>
+</div>
+</div>
+<div class="cs-help-sidebar">
+<!-- Sidebar content -->
+<div class="a-section a-spacing-small" id="search-help-sidebar">
+<div class="a-row search-help">
+<form action="/gp/help/customer/display.html?ie=UTF8&amp;nodeId=" id="search-help" method="get" name="search-help">
+<div class="a-column a-span8">
+<div class="a-row">
+<div class="a-search a-span12"><i class="a-icon a-icon-search"></i><input autocomplete="off" class="a-input-text a-span12" id="helpsearch" maxlength="100" name="help_keywords" placeholder="Search Help" type="search"/></div>
+</div>
+<div class="a-row">
+<div class="a-section a-text-left a-span12 a-box" id="help_srch_sggst" style="display: none;">
+</div>
+</div>
+</div>
+<div class="a-column a-span4 a-span-last">
+<span class="a-button a-button-span12 a-button-dark" id="helpSearchSubmit"><span class="a-button-inner"><input aria-labelledby="helpSearchSubmit-announce" class="a-button-input" type="submit"/><span aria-hidden="true" class="a-button-text" id="helpSearchSubmit-announce">Go
+	                </span></span></span>
+</div>
+<input name="search" type="hidden" value="true"/>
+<input name="nodeId" type="hidden" value="200545940"/>
+<input id="searchPlaceholder" name="kwHidden" type="hidden" value="true"/>
+<input id="searchAutocomplete" name="sprefix" type="hidden"/>
+</form>
+</div>
+</div>
+<div class="cs-help-sidebar-module topic-sidebar">
+<div class="inner">
+<span>
+<span class="a-color-state">‹</span>
+<a href="/gp/help/customer/display.html?ie=UTF8&amp;nodeId=200507590">All Help Topics</a>
+</span>
+</div>
+<div class="inner">
+<h3>Legal information </h3>
+<ul class="nav-topics"><li class="selected">Conditions of Use </li><li><a href="/gp/help/customer/display.html?ie=UTF8&amp;nodeId=200545460">Amazon.in Privacy Notice</a></li><li><a href="/gp/help/customer/display.html?ie=UTF8&amp;nodeId=200545440">Content guidelines</a></li><li><a href="/gp/help/customer/display.html?ie=UTF8&amp;nodeId=201632640">Supported Browsers</a></li><li><a href="/gp/help/customer/display.html?ie=UTF8&amp;nodeId=201744880">About Amazon Consumer Survey E-mails</a></li></ul>
+</div>
+</div>
+<div class="cs-help-sidebar-module take-action-sidebar">
+<div class="inner">
+<h3>Quick Solutions</h3>
+<div class="a-spacing-base">
+<ul class="cs-list-jq default-actions"><li class="a-spacing-micro"><a href="https://www.amazon.in/gp/css/order-history">Track Packages or View Orders</a></li><li class="a-spacing-micro"><a href="/gp/css/account/cards/view.html">Manage your Payment Methods</a></li><li class="a-spacing-micro"><a href="/gp/css/returns/homepage.html">Return items</a></li><li class="a-spacing-micro"><a href="https://www.amazon.in/ap/cnep?_encoding=UTF8&amp;openid.assoc_handle=inflex&amp;openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;openid.mode=checkid_setup&amp;openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&amp;openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&amp;openid.pape.max_auth_age=0&amp;openid.return_to=https%3A%2F%2Fwww.amazon.in%2Fgp%2Fhelp%2Fcustomer%2Fdisplay.html%3Fie%3DUTF8%26ref_%3Dhp_ss_comp_cnep">Change Name, Email, or Password</a></li><li class="a-spacing-micro"><a href="/gp/css/account/address/view.html">Manage Address Book</a></li><li class="a-spacing-micro"><a href="/manageyourkindle">Manage Your Content and Devices</a></li></ul>
+</div>
+<div id="displayLink">
+<a class="a-button a-button-secondary a-spacing-micro" href="/gp/help/customer/contact-us?ie=UTF8&amp;nodeId=200545940">
+<span class="a-button-inner">
+<span class="a-button-text">
+              Contact Us
+          </span>
+</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="a-divider a-divider-section">
+<div class="a-divider-inner"></div>
+</div>
+<div id="navFooter"><table align="center" cellspacing="0" class="navFooterVerticalColumn"><tr><td class="navFooterLinkCol"><div class="navFooterColHead">Get to Know Us</div><ul><li class="nav_first"><a class="nav_a" href="/b?ie=UTF8&amp;node=1592138031">About Us</a></li><li><a class="nav_a" href="http://amazon.jobs">Careers</a></li><li><a class="nav_a" href="/b?ie=UTF8&amp;node=1592137031">Press Releases</a></li><li class="nav_last"><a class="nav_a" href="/Online-Charity/b?ie=UTF8&amp;node=4594605031">Gift a Smile</a></li></ul></td><td class="navFooterColSpacerInner"></td><td class="navFooterLinkCol"><div class="navFooterColHead">Connect with Us</div><ul><li class="nav_first"><a class="nav_a" href="http://www.amazon.in/gp/redirect.html/ref=footer_fb?location=http://www.facebook.com/AmazonIN&amp;token=6BD0FB927CC51E76FF446584B1040F70EA7E88E1">Facebook</a></li><li><a class="nav_a" href="http://www.amazon.in/gp/redirect.html/ref=footer_twitter?location=http://twitter.com/AmazonIN&amp;token=7A1A4AE8F6CE0BD277D8295E58702D283F329C0F">Twitter</a></li><li class="nav_last"><a class="nav_a" href="https://www.amazon.in/gp/redirect.html/ref=footer_blog?_encoding=UTF8&amp;location=http://blog.amazon.in">The Amazon.in Blog</a></li></ul></td><td class="navFooterColSpacerInner"></td><td class="navFooterLinkCol"><div class="navFooterColHead">Make Money with Us</div><ul><li class="nav_first"><a class="nav_a" href="https://www.amazon.in/refer-and-earn">Refer &amp; Earn Rs.200</a></li><li><a class="nav_a" href="http://services.amazon.in/services/sell-on-amazon/benefits.html/ref=az_footer_soa?ld=AWRGINSOAfooter">Sell on Amazon</a></li><li><a class="nav_a" href="https://www.amazon.in:443/gp/redirect.html?_encoding=UTF8&amp;location=https%3A%2F%2Faffiliate-program.amazon.in%2F%3Futm_campaign%3Dassocshowcase%26utm_medium%3Dfooter%26utm_source%3DGW&amp;source=standards&amp;token=680FE811DE27E32BF3D5179FEDA69BDF16FC904C">Become an Affiliate</a></li><li class="nav_last"><a class="nav_a" href="http://services.amazon.in/services/fulfilment-by-amazon/benefits.html/ref=az_footer_fba?ld=AWRGINFBAfooter">Fulfilment by Amazon</a></li></ul></td><td class="navFooterColSpacerInner"></td><td class="navFooterLinkCol"><div class="navFooterColHead">Let Us Help You</div><ul><li class="nav_first"><a class="nav_a" href="/gp/css/homepage.html">Your Account</a></li><li><a class="nav_a" href="/gp/help/customer/display.html?ie=UTF8&amp;nodeId=200534000">Delivery Speeds &amp; Charges</a></li><li><a class="nav_a" href="/gp/css/returns/homepage.html">Returns Centre</a></li><li><a class="nav_a" href="/gp/help/customer/display.html?ie=UTF8&amp;nodeId=201083470">100% Purchase Protection</a></li><li class="nav_last"><a class="nav_a" href="/gp/help/customer/display.html?ie=UTF8&amp;nodeId=200507590">Help</a></li></ul></td></tr></table>
+<div class="navFooterLine navFooterLogoLine"><a href="/"><img alt="amazon.in" border="0" height="28" src="http://g-ecx.images-amazon.com/images/G/31/gno/images/general/navAmazonLogoFooter._V391206769_.gif" width="98"/></a></div>
+<div class="navFooterLine navFooterLinkLine navFooterPadItemLine"><ul><li class="nav_first"><a class="nav_a" href="http://www.amazon.com.au">Australia</a></li><li><a class="nav_a" href="http://www.amazon.com.br">Brazil</a></li><li><a class="nav_a" href="http://www.amazon.ca">Canada</a></li><li><a class="nav_a" href="http://www.amazon.cn">China</a></li><li><a class="nav_a" href="http://www.amazon.fr">France</a></li><li><a class="nav_a" href="http://www.amazon.de">Germany</a></li><li><a class="nav_a" href="http://www.amazon.it">Italy</a></li><li><a class="nav_a" href="http://www.amazon.co.jp">Japan</a></li><li><a class="nav_a" href="http://www.amazon.com.mx/">Mexico</a></li><li><a class="nav_a" href="http://www.amazon.nl/">Netherlands</a></li><li><a class="nav_a" href="http://www.amazon.es">Spain</a></li><li><a class="nav_a" href="http://www.amazon.co.uk">United Kingdom</a></li><li class="nav_last"><a class="nav_a" href="http://www.amazon.com">United States</a></li></ul></div>
+<div class="navFooterLine navFooterLinkLine navFooterDescLine"><table cellspacing="0"><tr>
+<td class="navFooterDescSpacer" style="width: 40.0%"></td>
+<td class="navFooterDescItem"><a class="nav_a" href="http://www.abebooks.com/">AbeBooks<br/> <span class="navFooterDescText">Rare Books<br/> &amp; Textbooks</span></a></td>
+<td class="navFooterDescSpacer" style="width: 4%"></td>
+<td class="navFooterDescItem"><a class="nav_a" href="http://aws.amazon.com/what-is-cloud-computing/?sc_channel=EL&amp;sc_campaign=IN_amazonfooter">Amazon Web Services<br/> <span class="navFooterDescText">Scalable Cloud<br/> Computing Services</span></a></td>
+<td class="navFooterDescSpacer" style="width: 4%"></td>
+<td class="navFooterDescItem"><a class="nav_a" href="http://www.audible.com/">Audible<br/> <span class="navFooterDescText">Download<br/> Audio Books</span></a></td>
+<td class="navFooterDescSpacer" style="width: 4%"></td>
+<td class="navFooterDescItem"><a class="nav_a" href="http://www.diapers.com/">Diapers.com<br/> <span class="navFooterDescText">Everything<br/> But The Baby</span></a></td>
+<td class="navFooterDescSpacer" style="width: 4%"></td>
+<td class="navFooterDescItem"><a class="nav_a" href="http://www.dpreview.in/">DPReview<br/> <span class="navFooterDescText">Digital<br/> Photography</span></a></td>
+<td class="navFooterDescSpacer" style="width: 4%"></td>
+<td class="navFooterDescItem"><a class="nav_a" href="http://www.imdb.in/">IMDb<br/> <span class="navFooterDescText">Movies, TV<br/> &amp; Celebrities</span></a></td>
+<td class="navFooterDescSpacer" style="width: 40.0%"></td>
+</tr>
+<tr><td> </td></tr>
+<tr>
+<td class="navFooterDescSpacer" style="width: 40.0%"></td>
+<td class="navFooterDescItem"><a class="nav_a" href="http://www.junglee.com/">Junglee.com<br/> <span class="navFooterDescText">Shop Online<br/> in India</span></a></td>
+<td class="navFooterDescSpacer" style="width: 4%"></td>
+<td class="navFooterDescItem"><a class="nav_a" href="http://www.look.com/">Look.com<br/> <span class="navFooterDescText">Kids' Clothing<br/> &amp; Shoes</span></a></td>
+<td class="navFooterDescSpacer" style="width: 4%"></td>
+<td class="navFooterDescItem"><a class="nav_a" href="http://www.myhabit.com/">MYHABIT<br/> <span class="navFooterDescText">Private Fashion<br/> Designer Sales</span></a></td>
+<td class="navFooterDescSpacer" style="width: 4%"></td>
+<td class="navFooterDescItem"><a class="nav_a" href="http://www.shopbop.com/">Shopbop<br/> <span class="navFooterDescText">Designer<br/> Fashion Brands</span></a></td>
+<td class="navFooterDescSpacer" style="width: 4%"></td>
+<td class="navFooterDescItem"><a class="nav_a" href="http://www.yoyo.com/">Yoyo.com<br/> <span class="navFooterDescText">A Happy Place<br/> To Shop For Toys</span></a></td>
+<td class="navFooterDescSpacer" style="width: 4%"></td>
+<td class="navFooterDescItem"> </td>
+<td class="navFooterDescSpacer" style="width: 40.0%"></td>
+</tr>
+</table></div>
+<div class="navFooterLine navFooterLinkLine navFooterPadItemLine"><ul><li class="nav_first"><a class="nav_a" href="/gp/help/customer/display.html?ie=UTF8&amp;nodeId=200545940">Conditions of Use &amp; Sale</a></li><li class="nav_last"><a class="nav_a" href="/gp/help/customer/display.html?ie=UTF8&amp;nodeId=200534380">Privacy Notice</a></li></ul><span>© 1996-2015, Amazon.com, Inc. or its affiliates</span><ul></ul></div>
+</div>
+<!-- whfh-/drkmMbmobtU93lx8yusN78rMvxXDErhPAiizWT8ss8LLwVZnFkR2g== rid-1VZKJMPXB6PXJ3FMNGFY -->
+<div aria-hidden="true" id="sis_pixel_r2" style="height:1px;"></div><script>(function(a,b){a.attachEvent?a.attachEvent("onload",b):a.addEventListener&&a.addEventListener("load",b,!1)})(window,function(){setTimeout(function(){var el=document.getElementById("sis_pixel_r2");el&&(el.innerHTML='<iframe id="DAsis" src="//aax-eu.amazon-adsystem.com/s/iu3?d=amazon.in&slot=navFooter&a2=0101a1823ca3d5d46ce03d4502edf28f095b20f780c29eddcddebefb2933fa9c1e98&old_oo=0&cb=1432055568222" width="1" height="1" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>')},300)});</script>
+<div style="display: none;">
+<div class="nav-flyout-content" id="nav_your_account_flyout">
+<ul class="nav_pop_ul">
+<li class="nav_pop_li nav_divider_after" id="nav-ya-btn-signin"><div id="nav-flyout-ya-signin"><a class="nav-action-button" data-nav-ref="nav_signin" data-nav-role="signin" href="https://www.amazon.in/ap/signin?_encoding=UTF8&amp;openid.assoc_handle=inflex&amp;openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;openid.mode=checkid_setup&amp;openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&amp;openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&amp;openid.pape.max_auth_age=0&amp;openid.return_to=https%3A%2F%2Fwww.amazon.in%2Fgp%2Fyourstore%2Fhome%3Fie%3DUTF8%26ref_%3Dnav_signin" rel="nofollow"><span class="nav-action-inner">
+      Sign in
+    </span></a><div class="nav_pop_new_cust" id="nav-flyout-ya-newCust">
+    New customer?
+    <a class="nav_a" href="https://www.amazon.in/ap/register?_encoding=UTF8&amp;openid.assoc_handle=inflex&amp;openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;openid.mode=checkid_setup&amp;openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&amp;openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&amp;openid.pape.max_auth_age=0&amp;openid.return_to=https%3A%2F%2Fwww.amazon.in%2Fgp%2Fyourstore%2Fhome%3Fie%3DUTF8%26ref_%3Dnav_newcust" rel="nofollow">
+      Start here.
+    </a></div></div></li>
+<li class="nav_first nav_pop_li"><a class="nav_a" href="https://www.amazon.in/gp/css/homepage.html">Your Account</a></li><li class="nav_pop_li"><a class="nav_a" href="https://www.amazon.in/gp/css/order-history" id="nav_prefetch_yourorders">Your Orders</a></li><li class="nav_pop_li"><a class="nav_a" href="/gp/registry/wishlist?ie=UTF8&amp;requiresSignIn=1">Your Wish List</a></li><li class="nav_pop_li"><a class="nav_a" href="/gp/yourstore">Your Recommendations</a></li><li class="nav_last nav_pop_li nav_divider_before"><a class="nav_a" href="/gp/digital/fiona/manage">Manage Your Content and Devices</a></li> </ul>
+<!--[if IE ]>
+    <div class='nav-ie-min-width' style='width: 160px; height: 1px;'></div>
+  <![endif]-->
+</div>
+<div class="nav-empty nav-flyout-content" id="nav_wishlist_flyout">
+<div class="nav-ajax-message"></div>
+<ul class="nav_dynamic nav_pop_ul nav_divider_after"></ul>
+<ul class="nav_pop_ul">
+<li class="nav_first nav_pop_li nav-dynamic-empty"><a class="nav_a" href="/gp/registry/wishlist?ie=UTF8&amp;triggerElementID=createList">Create a Wish List</a></li><li class="nav_pop_li"><a class="nav_a" href="/gp/registry/search.html?ie=UTF8&amp;type=wishlist">Find a Wish List</a></li><li class="nav_last nav_taglined nav_pop_li"><a class="nav_a" href="/wishlist/universal">Wish from Any Website</a><div class="nav_tag">Add items to your List from anywhere</div></li>
+</ul>
+</div>
+<div id="nav-signin-tooltip"><a class="nav-action-button" data-nav-ref="nav_custrec_signin" data-nav-role="signin" href="https://www.amazon.in/ap/signin?_encoding=UTF8&amp;openid.assoc_handle=inflex&amp;openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;openid.mode=checkid_setup&amp;openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&amp;openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&amp;openid.pape.max_auth_age=0&amp;openid.return_to=https%3A%2F%2Fwww.amazon.in%2Fgp%2Fyourstore%2Fhome%3Fie%3DUTF8%26ref_%3Dnav_custrec_signin"><span class="nav-action-inner">
+      Sign in
+    </span></a><div class="nav-signin-tooltip-footer">
+    New customer? <a class="nav-a" href="https://www.amazon.in/ap/register?_encoding=UTF8&amp;openid.assoc_handle=inflex&amp;openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;openid.mode=checkid_setup&amp;openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&amp;openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&amp;openid.pape.max_auth_age=0&amp;openid.return_to=https%3A%2F%2Fwww.amazon.in%2Fgp%2Fyourstore%2Fhome%3Fie%3DUTF8%26ref_%3Dnav_custrec_newcust">
+      Start here.
+    </a></div></div>
+<script id="nav-tpl-discoveryPanelList" type="text/html"><# var renderItems = function(items) { #>    <span class='nav-dp-title nav-item'>            </span>     <# jQuery.each(items, function (i, item) { #>        <div class='nav-divider nav-item'></div>        <span class='nav-item'>            <a href='<#=item.order_link#>' class='nav-dp-link'>                    <span class='nav-dp-left-column'>                        <img src='<#=item.image#>' class='nav-dp-image'/>                    </span>                    <span class='nav-dp-right-column'>                        <span class='nav-dp-text <#=item.status#>'>                            <#=item.status_text#>                            <br/>                        </span>                        <# if(item.secondary_status_text) { #>                            <span class='nav-dp-text-secondary <#=item.status#>'>                                <#=item.secondary_status_text#>                            </span>                        <# } #>                    </span>            </a>        </span>  <# }); #>  <div class='nav-divider nav-item'></div>  <a href="/your-orders/ref=nav_dp_yourorder" class="nav-dp-link-emphasis">        </a><# }; #><# renderItems(items); #></script><script id="nav-tpl-asin-promo" type="text/html"><a href='<#=destination #>' class='nav_asin_promo'>  <img src='<#=image #>' class='nav_asin_promo_img'/>  <span class='nav_asin_promo_headline'><#=headline #></span>  <span class='nav_asin_promo_info'>    <span class='nav_asin_promo_title'><#=productTitle #></span>    <span class='nav_asin_promo_title2'><#=productTitle2 #></span>    <span class='nav_asin_promo_price'><#=price #></span>  </span>  <span class='nav_asin_promo_button nav-sprite'><#=button #></span></a></script><script id="nav-tpl-itemList" type="text/html"><# var hasColumns = (function () {  var checkColumns = function (_items) {    if (!_items) {      return false;    }    for (var i=0; i<_items.length; i++) {      if (_items[i].columnBreak || (_items[i].items && checkColumns(_items[i].items))) {        return true;      }    }    return false;  };  return checkColumns(items);}()); #><# if(hasColumns) { #>  <div class='nav-column nav-column-first'><# } #><# var renderItems = function(items) { #>  <# jQuery.each(items, function (i, item) { #>    <# if(hasColumns && item.columnBreak) { #>      </div><div class='nav-column nav-column-notfirst'>    <# } #>    <# if(item.dividerBefore) { #>      <div class='nav-divider'></div>    <# } #>    <# if(item.text || item.content) { #>      <# if(item.url) { #>        <a href='<#=item.url #>' class='nav-link      <# } else {#>        <span class='      <# } #>      <# if(item.panelKey) { #>        nav-hasPanel      <# } #>      <# if(item.items) { #>        nav-title      <# } #>      <# if(item.decorate == 'carat') { #>        nav-carat      <# } #>      nav-item'      <# if(item.extra) { #>        <#=item.extra #>      <# } #>      <# if(item.id) { #>        id='<#=item.id #>'      <# } #>      <# if(item.panelKey) { #>        data-nav-panelkey='<#=item.panelKey #>'      <# } #>      <# if(item.subtextKey) { #>        data-nav-subtextkey='<#=item.subtextKey #>'      <# } #>      <# if(item.image && item.image.height > 16) { #>        style='line-height:<#=item.image.height #>px;'      <# } #>      >      <# if(item.decorate == 'carat') { #>        <i class="nav-icon"></i>      <# } #>      <# if(item.image && item.image.src) { #>        <img class='nav-image' src='<#=item.image.src #>' style='height:<#=item.image.height #>px; width:<#=item.image.width #>px;' />      <# } #>      <# if(item.text) { #>        <span class='nav-text'><#=item.text#></span>      <# } else if (item.content) { #>        <span class='nav-content'><# jQuery.each(item.content, function (j, cItem) { #><# if(cItem.url && cItem.text) { #><a href='<#=cItem.url #>' class='nav-a'><#=cItem.text #></a><# } else if (cItem.text) { #><#=cItem.text#><# } #><# }); #></span>      <# } #>      <# if(item.subtext) { #>        <span class='nav-subtext'><#=item.subtext #></span>      <# } #>      <# if(item.url) { #>        </a>      <# } else {#>        </span>      <# } #>    <# } #>    <# if(item.items) { #>      <div class='nav-panel'> <# renderItems(item.items); #> </div>    <# } #>  <# }); #><# }; #><# renderItems(items); #><# if(hasColumns) { #>  </div><# } #></script><script id="nav-tpl-notificationsList" type="text/html"><div class='nav-item nav-title'>  </div><# jQuery.each(items || [], function (i, item) { #>  <div class='nav-item<# if (item.type) { #> nav-noti-list-<#= item.type #><# } #><# if (item.image && item.image.src) { #> nav-noti-list-with-image<# } #>'>    <# if (item.dismissId) { #>      <div class='nav-noti-list-x' data-noti-id='<#= item.dismissId #>'>&times;</div>    <# } #>    <# if (item.image && item.image.src) { #>      <div class='nav-noti-list-image'>        <img class='nav-noti-list-image-tag' src='<#= item.image.src #>' <# if (item.image.alt) { #> alt='<#= item.image.alt #>'<# } #> <# if (item.image.title) { #> title='<#= item.image.title #>'<# } #>/>      </div>    <# } #>    <# if (item.heading) { #>      <div class='nav-noti-list-heading'><#= item.heading #></div>    <# } #>    <# jQuery.each(item.content || [], function (j, itemContent) { #>      <# if (itemContent.url) { #>        <a href='<#= itemContent.url #>' class='nav-noti-list-content'>      <# } else { #>        <div class='nav-noti-list-content'>      <# } #>        <# if (itemContent.text) { #>          <span class='nav-noti-list-text'><#= itemContent.text #></span>        <# } #>        <# if (itemContent.subtext) { #>          <span class='nav-noti-list-subtext'><#= itemContent.subtext #></span>        <# } #>      <# if (itemContent.url) { #>        </a>      <# } else { #>        </div>      <# } #>    <# }); #>  </div><# }); #></script><script id="nav-tpl-htmlList" type="text/html">  <# jQuery.each(items, function (i, item) { #>    <div class='nav-item'>      <#=item #>    </div>  <# }); #></script><script id="nav-tpl-wishlist" type="text/html"><# jQuery.each(wishlist, function (i, item) { #>  <li class='nav_pop_li'>    <a href='<#=item.url #>' class='nav_a'>      <#=item.name #>    </a>    <div class='nav_tag'>      <!-- TODO this logic should now be in dynamic-wish-list.mi -->      <# if(typeof item.count !='undefined') { #>        <#=          (item.count == 1 ? "{count} item" : "{count} items")            .replace("{count}", item.count)        #>      <# } #>    </div>  </li><# }); #></script><script id="nav-tpl-subnav" type="text/html"><# if (obj && obj.type === 'vertical') { #>  <# jQuery.each(obj.rows, function (i, row) { #>    <# if (row.flyoutElement === 'button') { #>      <div class='nav_sv_fo_v_button' <#=(row.elementStyle ? 'style="' + row.elementStyle  + '"' : '') #>>        <a href='<#=row.url #>' class='nav-action-button nav-sprite'>          <#=row.text #>        </a>      </div>    <# } else if (row.flyoutElement === 'list' && row.list) { #>      <# jQuery.each(row.list, function (j, list) { #>        <div class="nav_sv_fo_v_column <#=(j === 0) ? 'nav_sv_fo_v_first' : '' #>">          <ul class='<#=list.elementClass #>'>          <# jQuery.each(list.linkList, function (k, link) { #>            <# if (k === 0) { link.elementClass += ' nav_sv_fo_v_first'; } #>            <li class='<#=link.elementClass #>'>              <# if (link.url) { #>                <a href='<#=link.url #>' class='nav_a'><#=link.text #></a>              <# } else { #>                <span class="nav_sv_fo_v_span"><#=link.text #></span>              <# } #>            </li>          <# }); #>          </ul>        </div>      <# }); #>    <# } else if (row.flyoutElement === 'link') { #>      <# if (row.topSpacer) { #>        <div class="nav_sv_fo_v_clear"></div>      <# } #>      <div class='<#=row.elementClass #>'>        <a href='<#=row.url #>' class='nav_sv_fo_v_lmargin nav_a'>          <#=row.text #>        </a>      </div>    <# } #>  <# }); #><# } else if (obj) { #>  <div class='nav_sv_fo_scheduled'>    <#= obj #>  </div><# } #></script><script id="nav-tpl-cart" type="text/html"><# jQuery.each(items, function (i, item) { #>  <div class='nav-cart-item'>    <a href='<#=item.url #>' class='nav-cart-item-link'>      <img src='<#=item.img #>' class='nav-cart-item-image' />      <span class='nav-cart-item-title'><#=item.name #></span>      <# if (item.weight) { #>        <span class='nav-cart-item-weight' style='display:none;'>          <#= "".replace("{value}", item.weight.value).replace("{unit}", item.weight.unit) #>        </span>      <# } #>      <# if (item.ourPrice) { #>        <span class='nav-cart-item-buyingPrice'><#=item.ourPrice #></span>      <# } #>      <# if (item.scarcityMessage) { #>        <span class='<#=item.scarcityClass #>'><#=item.scarcityMessage #></span>      <# } #>      <span class='nav-cart-item-quantity'>        <# if(typeof item.wireless !== 'undefined') { #>          <#= "Items: {count}".replace("{count}", item.qty) #>        <# } else { #>          <#= "Quantity: {count}".replace("{count}", item.qty) #>        <# } #>      </span>    </a>  </div>  <# if (i%2==1) { #>    <div class='nav-cart-item-break'></div>  <# } #><# }); #><div class='nav-cart-item-break'></div></script>
+<div id="nav_browse_flyout">
+<div class="nav_browse_wrap" id="nav_subcats_wrap">
+<div id="nav_subcats">
+<div class="nav_browse_subcat nav_super_cat" data-nav-promo-id="kindle" id="nav_subcats_0"><ul class="nav_browse_ul nav_browse_cat_ul"><li class="nav_first nav_pop_li nav_browse_cat_head">Kindle E-readers</li><li class="nav_first nav_taglined nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/dp/B00KDRQ2RU">Kindle</a><div class="nav_tag">A world of books at your fingertips</div></li><li class="nav_taglined nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/dp/B00JG8FHJQ">Kindle Paperwhite</a><div class="nav_tag">For the love of reading</div></li><li class="nav_taglined nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/dp/B00IOY5AS6">Kindle Voyage</a><div class="nav_tag">Passionately crafted for readers</div></li><li class="nav_taglined nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Kindle-Accessories/b?ie=UTF8&amp;node=1634751031">Kindle E-reader Accessories</a><div class="nav_tag">Covers, chargers, sleeves and more</div></li><li class="nav_pop_li nav_browse_cat_head nav_divider_before">Kindle Apps &amp; Resources</li><li class="nav_first nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/gp/feature.html?ie=UTF8&amp;docId=1000659093">Free Kindle Reading Apps</a></li><li class="nav_taglined nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="https://www.amazon.in:443/gp/redirect.html?location=https://read.amazon.in/&amp;token=58913ACCA4D526B43BC6E2C36FA384E9D83BA838&amp;source=standards" target="_blank">Kindle Cloud Reader</a><div class="nav_tag">Read your Kindle books in a browser</div></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/gp/feature.html?ie=UTF8&amp;docId=1000721773">Appstore for Android</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/gp/digital/fiona/manage">Manage Your Content and Devices</a></li></ul>
+<ul class="nav_browse_ul nav_browse_cat2_ul">
+<li class="nav_pop_li nav_browse_cat_head">Kindle eBooks</li><li class="nav_first nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/ebooks-kindle/b?ie=UTF8&amp;node=1634753031">All Kindle eBooks</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/gp/bestsellers/digital-text/1634753031">eBook Bestsellers</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Free-Kindle-eBooks/b?ie=UTF8&amp;node=4341284031">Free Kindle eBooks</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/literature-fiction-ebook-kindle/b?ie=UTF8&amp;node=1637119031">Literature &amp; Fiction</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/business-finance-ebooks-kindle/b?ie=UTF8&amp;node=1637021031">Business &amp; Economics</a></li></ul></div>
+<div class="nav_browse_subcat" data-nav-promo-id="amazon-apps" id="nav_subcats_1"><ul class="nav_browse_ul nav_browse_cat_ul"><li class="nav_first nav_pop_li nav_browse_cat_head">Amazon Apps</li><li class="nav_first nav_taglined nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/gp/feature.html?ie=UTF8&amp;docId=1000745723">Amazon Shopping App</a><div class="nav_tag">Shop on the go anytime, anywhere</div></li><li class="nav_taglined nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/gp/feature.html?ie=UTF8&amp;docId=1000659093">Free Kindle Reading Apps</a><div class="nav_tag">For PC, iPad, iPhone, Android, and more</div></li><li class="nav_taglined nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/gp/feature.html?ie=UTF8&amp;docId=1000721773">Amazon Appstore for Android</a><div class="nav_tag">Get a paid app or game for free</div></li></ul></div>
+<div class="nav_browse_subcat" data-nav-promo-id="books" id="nav_subcats_2"><ul class="nav_browse_ul nav_browse_cat_ul"><li class="nav_first nav_pop_li nav_browse_cat_head">Books</li><li class="nav_first nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Books/b?ie=UTF8&amp;node=976389031">All Books</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/gp/bestsellers/books">Bestsellers</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/b?ie=UTF8&amp;node=4143742031">New Releases &amp; Pre-orders</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Hindi-Books/b?ie=UTF8&amp;node=4506102031">Hindi Books</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/children-books/b?ie=UTF8&amp;node=1318073031">Children's &amp; Young Adult</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/literature-fiction-books/b?ie=UTF8&amp;node=1318157031">Literature &amp; Fiction</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/indian-writing/b?ie=UTF8&amp;node=1890195031">Indian Writing</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Exam-Preparations-Books/b?ie=UTF8&amp;node=4149751031">All Exam Preparation</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Text-Books/b?ie=UTF8&amp;node=4149418031">All Textbooks</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/business-economics-books/b?ie=UTF8&amp;node=1318068031">Business &amp; Economics</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/ebooks-kindle/b?ie=UTF8&amp;node=1634753031">Kindle eBooks</a></li><li class="nav_subcat_link nav_pop_li nav_divider_before"><a class="nav_a nav_item" href="/b?ie=UTF8&amp;node=5490084031">Educational Software</a></li></ul></div>
+<div class="nav_browse_subcat nav_super_cat" data-nav-promo-id="music-movies-games" id="nav_subcats_3"><ul class="nav_browse_ul nav_browse_cat_ul"><li class="nav_first nav_pop_li nav_browse_cat_head"> Movies &amp; TV Shows</li><li class="nav_first nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/movies-tv-shows/b?ie=UTF8&amp;node=976416031">All Movies &amp; TV Shows</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/blu-ray/b?ie=UTF8&amp;node=1575405031">Blu-ray</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Hindi-Movies-TV-Shows/b?ie=UTF8&amp;node=4068583031">All English</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/English-Movies-TV-Shows/b?ie=UTF8&amp;node=4068584031">All Hindi</a></li><li class="nav_pop_li nav_browse_cat_head nav_divider_before">Video Games</li><li class="nav_first nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/video-games/b?ie=UTF8&amp;node=976460031">All Consoles, Games &amp; Accessories</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/pc-games/b?ie=UTF8&amp;node=1376518031"> PC Games </a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Video-Games-New-Releases/b?ie=UTF8&amp;node=4069183031">Pre-orders &amp; New Releases</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Video-Games-Consoles/b?ie=UTF8&amp;node=4092115031">Consoles</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Video-Games-Accessories/b?ie=UTF8&amp;node=4092116031">Accessories</a></li></ul>
+<ul class="nav_browse_ul nav_browse_cat2_ul">
+<li class="nav_pop_li nav_browse_cat_head">Music</li><li class="nav_first nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/music/b?ie=UTF8&amp;node=976445031">All Music</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/International-Music/b?ie=UTF8&amp;node=4092674031">International Music</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Film-Songs/b?ie=UTF8&amp;node=1375845031">Film Songs</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Indian-Classical/b?ie=UTF8&amp;node=1375848031">Indian Classical</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Musical-Instruments/b?ie=UTF8&amp;node=3677697031">Musical Instruments</a></li></ul></div>
+<div class="nav_browse_subcat nav_super_cat" data-nav-promo-id="phones-accessories" id="nav_subcats_4"><ul class="nav_browse_ul nav_browse_cat_ul"><li class="nav_first nav_pop_li nav_browse_cat_head">Mobiles &amp; Tablets</li><li class="nav_first nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/mobiles-accessories/b?ie=UTF8&amp;node=1389401031">All Mobile Phones</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Smartphones/b?ie=UTF8&amp;node=1805560031">Smartphones</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Android-Mobiles/b?ie=UTF8&amp;node=4916280031">Android Mobiles</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Windows-Mobiles/b?ie=UTF8&amp;node=4916281031">Windows Mobiles</a></li><li class="nav_subcat_link nav_pop_li nav_divider_before"><a class="nav_a nav_item" href="/mobile-phone-accessories/b?ie=UTF8&amp;node=1389402031">All Mobile Accessories</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Cases-Covers/b?ie=UTF8&amp;node=1389409031">Cases &amp; Covers</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Headsets/b?ie=UTF8&amp;node=1389418031">Headsets</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Power-Banks/b?ie=UTF8&amp;node=4222146031">Power Banks</a></li><li class="nav_taglined nav_subcat_link nav_pop_li nav_divider_before"><a class="nav_a nav_item" href="/electronics/b?ie=UTF8&amp;node=976419031"> All Electronics </a><div class="nav_tag">Discover more products</div></li></ul>
+<ul class="nav_browse_ul nav_browse_cat2_ul">
+<li class="nav_pop_li nav_browse_cat_head"> </li><li class="nav_first nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Tablets/b?ie=UTF8&amp;node=1375458031">All Tablets</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/tablet-accessories/b?ie=UTF8&amp;node=1375328031">Tablet Accessories</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Landline-Phones/b?ie=UTF8&amp;node=1389490031">Landline Phones</a></li></ul></div>
+<div class="nav_browse_subcat nav_super_cat" data-nav-promo-id="computer-accessories" id="nav_subcats_5"><ul class="nav_browse_ul nav_browse_cat_ul"><li class="nav_first nav_pop_li nav_browse_cat_head"> Computers &amp; Accessories </li><li class="nav_first nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/computers-and-accessories/b?ie=UTF8&amp;node=976392031"> All Computers &amp; Accessories </a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Laptops/b?ie=UTF8&amp;node=1375424031">Laptops</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/b?ie=UTF8&amp;node=5208309031">Desktops &amp; Monitors</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/pen-drive/b?ie=UTF8&amp;node=1375411031">Pen Drives</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Hard-disks/b?ie=UTF8&amp;node=1375395031">Hard Drives</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/memory-cards/b?ie=UTF8&amp;node=1388963031">Memory Cards</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/printers-scanners/b?ie=UTF8&amp;node=1575411031">Printers &amp; Ink</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/networking-devices/b?ie=UTF8&amp;node=1375427031">Networking &amp; Internet Devices</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Computer-Accessories/b?ie=UTF8&amp;node=1375248031"> Computer Accessories </a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Software/b?ie=UTF8&amp;node=976451031"> Software </a></li><li class="nav_taglined nav_subcat_link nav_pop_li nav_divider_before"><a class="nav_a nav_item" href="/electronics/b?ie=UTF8&amp;node=976419031"> All Electronics </a><div class="nav_tag">Discover more products</div></li></ul>
+<ul class="nav_browse_ul nav_browse_cat2_ul">
+<li class="nav_pop_li nav_browse_cat_head">Office &amp; Stationery</li><li class="nav_first nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Office-Stationery-Supplies/b?ie=UTF8&amp;node=2454172031">All Office &amp; Stationery</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Pens-Writing-Supplies/b?ie=UTF8&amp;node=3591021031">Pens &amp; Writing</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Art-Craft-Supplies/b?ie=UTF8&amp;node=3591014031">Art &amp; Craft Supplies</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Office-Electronics/b?ie=UTF8&amp;node=3591018031">Office Electronics</a></li></ul></div>
+<div class="nav_browse_subcat nav_super_cat" data-nav-promo-id="cam-aud-vid" id="nav_subcats_6"><ul class="nav_browse_ul nav_browse_cat_ul"><li class="nav_first nav_pop_li nav_browse_cat_head">Cameras &amp; Photography</li><li class="nav_first nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/camera-photography/b?ie=UTF8&amp;node=1388977031">All Cameras &amp; Photography</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/digital-slr-cameras/b?ie=UTF8&amp;node=1389177031">Digital SLRs</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/point-shoot-digital-cameras/b?ie=UTF8&amp;node=1389181031">Point &amp; Shoot Cameras</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/camera-lenses/b?ie=UTF8&amp;node=1389197031">Lenses</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/camera-accessories/b?ie=UTF8&amp;node=1388978031">Camera Accessories</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Surveillance-Cameras/b?ie=UTF8&amp;node=1389203031">Security &amp; Surveillance</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Binoculars-Telescopes-Optics/b?ie=UTF8&amp;node=1389159031">Binoculars &amp; Telescopes</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/camcorders/b?ie=UTF8&amp;node=1389174031">Camcorders</a></li><li class="nav_pop_li nav_browse_cat_head nav_divider_before">Musical Instruments</li><li class="nav_first nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Musical-Instruments/b?ie=UTF8&amp;node=3677697031">All Musical Instruments</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/b?ie=UTF8&amp;node=4581267031">Musical Instrument Accessories</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/b?ie=UTF8&amp;node=4581266031">Professional Audio &amp; Recording</a></li><li class="nav_taglined nav_subcat_link nav_pop_li nav_divider_before"><a class="nav_a nav_item" href="/electronics/b?ie=UTF8&amp;node=976419031"> All Electronics </a><div class="nav_tag">Discover more products</div></li></ul>
+<ul class="nav_browse_ul nav_browse_cat2_ul">
+<li class="nav_pop_li nav_browse_cat_head">Audio &amp; Video</li><li class="nav_first nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/tv-home-entertainment/b?ie=UTF8&amp;node=1575407031">All Audio &amp; Video</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/headphones/b?ie=UTF8&amp;node=1388921031">Headphones</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Speakers/b?ie=UTF8&amp;node=1389365031">Speakers</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Home-Entertainment-Systems/b?ie=UTF8&amp;node=1389375031">TV &amp; Home Entertainment</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/mp3-media-players/b?ie=UTF8&amp;node=1389433031">MP3 &amp; Media Players</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Home-Audio-Video-Accessories/b?ie=UTF8&amp;node=1388878031">Audio &amp; Video Accessories</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Projectors/b?ie=UTF8&amp;node=1389388031">Projectors</a></li></ul></div>
+<div class="nav_browse_subcat nav_super_cat" data-nav-promo-id="home-kitchen" id="nav_subcats_7"><ul class="nav_browse_ul nav_browse_cat_ul"><li class="nav_first nav_pop_li nav_browse_cat_head">Home &amp; Kitchen </li><li class="nav_first nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Home-Kitchen/b?ie=UTF8&amp;node=976442031">All Home &amp; Kitchen</a></li><li class="nav_taglined nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/b?ie=UTF8&amp;node=4951860031">Kitchen &amp; Home Appliances</a><div class="nav_tag">Induction Cooktops, Irons, Hand Blenders</div></li><li class="nav_taglined nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Large-Appliances/b?ie=UTF8&amp;node=1380263031"> Large Appliances </a><div class="nav_tag">Just Launched</div></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Kitchen-Dining/b?ie=UTF8&amp;node=3044927031">Kitchen &amp; Dining</a></li><li class="nav_subcat_link nav_pop_li nav_divider_before"><a class="nav_a nav_item" href="/Home-D%C3%A9cor/b?ie=UTF8&amp;node=1380374031">Home &amp; Decor</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Home-Furnishing/b?ie=UTF8&amp;node=1380442031">Home Furnishing</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Indoor-Lighting/b?ie=UTF8&amp;node=1380485031">Indoor Lighting</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Home-Improvement/b?ie=UTF8&amp;node=4286640031">Home Improvement</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Lawn-Garden/b?ie=UTF8&amp;node=4294807031">Lawn &amp; Garden</a></li></ul>
+<ul class="nav_browse_ul nav_browse_cat2_ul">
+<li class="nav_pop_li nav_browse_cat_head">Pet Supplies</li><li class="nav_first nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Pet-Supplies/b?ie=UTF8&amp;node=2454181031">All Pet Supplies</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Dogs-Supplies/b?ie=UTF8&amp;node=4771342031">Dogs</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Cats-Supplies/b?ie=UTF8&amp;node=4771341031">Cats</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Birds-Supplies/b?ie=UTF8&amp;node=4771340031">Birds</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Fish-Aquatics-Supplies/b?ie=UTF8&amp;node=4771339031">Fish &amp; Aquatics</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Small-Animals-Food/b?ie=UTF8&amp;node=4771347031">Small Animals</a></li></ul></div>
+<div class="nav_browse_subcat nav_super_cat" data-nav-promo-id="toys-baby" id="nav_subcats_8"><ul class="nav_browse_ul nav_browse_cat_ul"><li class="nav_first nav_pop_li nav_browse_cat_head">Toys &amp; Games</li><li class="nav_first nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Toys-Games/b?ie=UTF8&amp;node=1350380031">All Toys &amp; Games</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Puzzles/b?ie=UTF8&amp;node=1378470031">Puzzles</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Soft-Toys/b?ie=UTF8&amp;node=1378445031">Soft Toys</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Die-Cast-Toy-Vehicles/b?ie=UTF8&amp;node=1378242031">Die-Cast &amp; Toy Vehicles</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Learning-Educational/b?ie=UTF8&amp;node=1378342031">Learning &amp; Education</a></li></ul>
+<ul class="nav_browse_ul nav_browse_cat2_ul">
+<li class="nav_pop_li nav_browse_cat_head">Baby Products</li><li class="nav_first nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Baby/b?ie=UTF8&amp;node=1571274031">All Baby Products</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Diapering-Nappy-Changing/b?ie=UTF8&amp;node=1953345031">Diapering &amp; Nappy Changing</a></li><li class="nav_taglined nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Nursery/b?ie=UTF8&amp;node=1953359031">Nursery</a><div class="nav_tag">Furniture, Bedding and Room Décor</div></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Strollers-Prams/b?ie=UTF8&amp;node=1953480031">Strollers &amp; Prams</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Nursing-Feeding/b?ie=UTF8&amp;node=1953448031">Nursing &amp; Feeding</a></li></ul></div>
+<div class="nav_browse_subcat" data-nav-promo-id="sports-outdoors" id="nav_subcats_9"><ul class="nav_browse_ul nav_browse_cat_ul"><li class="nav_first nav_pop_li nav_browse_cat_head">Sports, Fitness &amp; Outdoors</li><li class="nav_first nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Sports/b?ie=UTF8&amp;node=1984443031">All Sports, Fitness &amp; Outdoors</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Exercise-Fitness/b?ie=UTF8&amp;node=3403635031">Exercise &amp; Fitness</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Camping-Hiking/b?ie=UTF8&amp;node=1984988031">Camping &amp; Hiking</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Cycling/b?ie=UTF8&amp;node=3403629031">Cycling</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Cricket/b?ie=UTF8&amp;node=3403628031">Cricket</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Badminton/b?ie=UTF8&amp;node=3403619031">Badminton</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Swimming/b?ie=UTF8&amp;node=3404234031">Swimming</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Motorbikes-Accessories/b?ie=UTF8&amp;node=3414627031">Motorbiking Accessories</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Golf/b?ie=UTF8&amp;node=3403644031">Golf</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Fanshop/b?ie=UTF8&amp;node=3403636031">Fan Shop</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Football/b?ie=UTF8&amp;node=3403640031">Football</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Tennis/b?ie=UTF8&amp;node=3403670031">Tennis</a></li></ul></div>
+<div class="nav_browse_subcat nav_super_cat" data-nav-promo-id="beauty-hpc" id="nav_subcats_10"><ul class="nav_browse_ul nav_browse_cat_ul"><li class="nav_first nav_pop_li nav_browse_cat_head">Beauty &amp; Health</li><li class="nav_first nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/beauty/b?ie=UTF8&amp;node=1355016031">All Beauty</a></li><li class="nav_taglined nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/b?ie=UTF8&amp;node=5311359031">Luxury Beauty</a><div class="nav_tag">Just Launched</div></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Fragrances/b?ie=UTF8&amp;node=1374298031">Fragrance</a></li><li class="nav_subcat_link nav_pop_li nav_divider_before"><a class="nav_a nav_item" href="/health-and-personal-care/b?ie=UTF8&amp;node=1350384031">All Health</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Diet-Nutrition/b?ie=UTF8&amp;node=1374489031"> Diet &amp; Nutrition</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Personal-Care/b?ie=UTF8&amp;node=1374594031"> Personal Care</a></li><li class="nav_subcat_link nav_pop_li nav_divider_before"><a class="nav_a nav_item" href="/Personal-Care-Appliances/b?ie=UTF8&amp;node=3150028031">Personal Care Appliances</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Health-Care-Devices/b?ie=UTF8&amp;node=3150027031">Health Care Devices</a></li><li class="nav_subcat_link nav_pop_li nav_divider_before"><a class="nav_a nav_item" href="/b?ie=UTF8&amp;node=5122801031">Men's Grooming</a></li></ul>
+<ul class="nav_browse_ul nav_browse_cat2_ul">
+<li class="nav_pop_li nav_browse_cat_head">Gourmet &amp; Specialty Foods</li><li class="nav_first nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Gourmet-Specialty-Foods/b?ie=UTF8&amp;node=2454178031">All Gourmet &amp; Specialty Foods</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Coffee-Tea-Beverages/b?ie=UTF8&amp;node=4859478031">Coffee, Tea &amp; Beverages</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Snack-Foods/b?ie=UTF8&amp;node=4859498031">Snack Foods</a></li></ul></div>
+<div class="nav_browse_subcat" data-nav-promo-id="clothing-accessories" id="nav_subcats_11"><ul class="nav_browse_ul nav_browse_cat_ul"><li class="nav_first nav_pop_li nav_browse_cat_head">Clothing &amp; Accessories</li><li class="nav_first nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Womens-clothing/b?ie=UTF8&amp;node=1953602031">Women's Clothing</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Mens-Clothing/b?ie=UTF8&amp;node=1968024031">Men's Clothing</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/kids-clothing/b?ie=UTF8&amp;node=4091091031">Kids' Clothing</a></li><li class="nav_subcat_link nav_pop_li nav_divider_before"><a class="nav_a nav_item" href="/womens-intimate-apparel/b?ie=UTF8&amp;node=4725138031">Women's Intimate Apparel</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Mens-Inner-wear/b?ie=UTF8&amp;node=1968126031">Men's Innerwear</a></li><li class="nav_subcat_link nav_pop_li nav_divider_before"><a class="nav_a nav_item" href="/b?ie=UTF8&amp;node=4516623031">All Accessories</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Clothing-accesories/b?ie=UTF8&amp;node=1571271031">All Clothing &amp; Accessories</a></li></ul></div>
+<div class="nav_browse_subcat nav_super_cat" data-nav-promo-id="watches-jewelry" id="nav_subcats_12"><ul class="nav_browse_ul nav_browse_cat_ul"><li class="nav_first nav_pop_li nav_browse_cat_head"> Watches </li><li class="nav_first nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Watches/b?ie=UTF8&amp;node=1350387031">All Watches</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Men-Watches/b?ie=UTF8&amp;node=2563504031">Men's Watches</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Women-Watches/b?ie=UTF8&amp;node=2563505031">Women's Watches</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Children-Watches/b?ie=UTF8&amp;node=2563506031">Children's Watches</a></li><li class="nav_subcat_link nav_pop_li nav_divider_before"><a class="nav_a nav_item" href="/Sports/b?ie=UTF8&amp;node=3044924031">Sports Watches</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Top-Watch-Gifts/b?ie=UTF8&amp;node=2631615031">Top Watch Gifts</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/b?ie=UTF8&amp;node=3513518031">Deals on Watches</a></li></ul>
+<ul class="nav_browse_ul nav_browse_cat2_ul">
+<li class="nav_pop_li nav_browse_cat_head">Jewellery</li><li class="nav_first nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Jewellery/b?ie=UTF8&amp;node=1951048031">All Jewellery</a></li><li class="nav_taglined nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Precious-Jewellery/b?ie=UTF8&amp;node=5210069031">Precious Jewellery</a><div class="nav_tag">Just Launched</div></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Fashion-Jewellery/b?ie=UTF8&amp;node=5210079031">Fashion Jewellery</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Imitation-Jewellery/b?ie=UTF8&amp;node=3543375031">Traditional Jewellery</a></li><li class="nav_subcat_link nav_pop_li nav_divider_before"><a class="nav_a nav_item" href="/Designer-Jewellery/b?ie=UTF8&amp;node=3044925031">Designer Jewellery</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Men-Jewellery/b?ie=UTF8&amp;node=3543376031">Men's Jewellery</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Jewellery-Gifts/b?ie=UTF8&amp;node=3588507031">Gift Store</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Jewellery-Sale/b?ie=UTF8&amp;node=4034692031">Sales &amp; Deals</a></li></ul></div>
+<div class="nav_browse_subcat nav_super_cat" data-nav-promo-id="clothing-shoes-luggage" id="nav_subcats_13"><ul class="nav_browse_ul nav_browse_cat_ul"><li class="nav_first nav_pop_li nav_browse_cat_head">Handbags &amp; Clutches</li><li class="nav_first nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Handbags-Clutches/b?ie=UTF8&amp;node=1983338031">All Handbags &amp; Clutches</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Handbags/b?ie=UTF8&amp;node=1983355031">Handbags</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Clutches/b?ie=UTF8&amp;node=1983350031">Clutches</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Totes/b?ie=UTF8&amp;node=1983356031">Totes</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Sling-Bags/b?ie=UTF8&amp;node=1983351031">Sling Bags</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Messenger-Bags/b?ie=UTF8&amp;node=2917442031">Messenger Bags</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/b?ie=UTF8&amp;node=2917497031">Women's Wallets</a></li><li class="nav_subcat_link nav_pop_li nav_divider_before"><a class="nav_a nav_item" href="/Designer-Bags/b?ie=UTF8&amp;node=4296704031">Premium Bags</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Leather-Bags/b?ie=UTF8&amp;node=4296709031">Leather Bags</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Handbags-Clutches-Sales-Deals/b?ie=UTF8&amp;node=4594603031">Sales &amp; Deals</a></li></ul>
+<ul class="nav_browse_ul nav_browse_cat2_ul">
+<li class="nav_pop_li nav_browse_cat_head">Luggage &amp; Bags</li><li class="nav_first nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Luggage-Bags/b?ie=UTF8&amp;node=2454169031">All Luggage &amp; Bags</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Backpacks/b?ie=UTF8&amp;node=2917430031">Backpacks</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Bags-Briefcases/b?ie=UTF8&amp;node=2917431031">Bags &amp; Briefcases</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Laptop-Bags/b?ie=UTF8&amp;node=2917441031">Laptop Bags</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Travel-Duffles/b?ie=UTF8&amp;node=2917451031">Travel Duffles</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Luggage/b?ie=UTF8&amp;node=2917432031">Luggage</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Travel-Accessories/b?ie=UTF8&amp;node=2917434031">Travel Accessories</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/b?ie=UTF8&amp;node=2917496031">Men's Wallets</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/b?ie=UTF8&amp;node=4238515031">Sales &amp; Deals</a></li></ul></div>
+<div class="nav_browse_subcat nav_super_cat" data-nav-promo-id="shoes" id="nav_subcats_14"><ul class="nav_browse_ul nav_browse_cat_ul"><li class="nav_first nav_pop_li nav_browse_cat_head">Men's Shoes</li><li class="nav_first nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Men-Shoes/b?ie=UTF8&amp;node=1983518031">All Men's Shoes</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Men-Formal-Shoes/b?ie=UTF8&amp;node=1983572031">Formal Shoes</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Sports-Outdoor-Men-Shoes/b?ie=UTF8&amp;node=1983519031">Sports &amp; Outdoor</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Loafers-Moccasins-Shoes/b?ie=UTF8&amp;node=1983573031">Loafers &amp; Mocassins</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Sneakers-Men/b?ie=UTF8&amp;node=1983577031">Sneakers</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Sandals-Floaters/b?ie=UTF8&amp;node=1983571031">Sandals &amp; Floaters</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Flip-Flop-Slippers/b?ie=UTF8&amp;node=1983575031">Flip-flops</a></li><li class="nav_subcat_link nav_pop_li nav_divider_before"><a class="nav_a nav_item" href="/Kids-Baby-Shoes/b?ie=UTF8&amp;node=4091095031">Kids' Shoes</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Shoe-Care-Accessories/b?ie=UTF8&amp;node=1983320031">Shoe Care &amp; Accessories</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Shoes/b?ie=UTF8&amp;node=1983396031">All Shoes</a></li></ul>
+<ul class="nav_browse_ul nav_browse_cat2_ul">
+<li class="nav_pop_li nav_browse_cat_head">Women's Shoes</li><li class="nav_first nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Women-Shoes/b?ie=UTF8&amp;node=1983578031">All Women's Shoes</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Pumps-Peeptoes/b?ie=UTF8&amp;node=1983631031">Pumps &amp; Peeptoes</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Fashion-Sandals/b?ie=UTF8&amp;node=1983633031">Fashion Sandals</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Casual-Slippers/b?ie=UTF8&amp;node=1983639031">Casual Slippers</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Ballet-Flats/b?ie=UTF8&amp;node=1983627031">Ballet Flats</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/Sports-Outdoor-Women-Shoes/b?ie=UTF8&amp;node=1983579031">Sports &amp; Outdoor</a></li></ul></div>
+<div class="nav_browse_subcat" data-nav-promo-id="automotive" id="nav_subcats_15"><ul class="nav_browse_ul nav_browse_cat_ul"><li class="nav_first nav_pop_li nav_browse_cat_head">Car &amp; Motorbike</li><li class="nav_first nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/automotive/b?ie=UTF8&amp;node=4772060031">All Car &amp; Motorbike</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/b?ie=UTF8&amp;node=5257474031">Car Accessories</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/b?ie=UTF8&amp;node=5257478031">Motorbike Accessories &amp; Parts</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/b?ie=UTF8&amp;node=5257472031">Car &amp; Motorbike Care</a></li><li class="nav_subcat_link nav_pop_li"><a class="nav_a nav_item" href="/b?ie=UTF8&amp;node=5257475031">Car Parts</a></li></ul></div>
+</div>
+<div class="nav_subcats_div"></div>
+<div class="nav_subcats_div nav_subcats_div2"></div>
+</div>
+<div class="nav_browse_wrap" id="nav_cats_wrap">
+<ul class="nav_browse_ul" id="nav_cats">
+<li class="nav_first nav_taglined nav_pop_li nav_cat" id="nav_cat_0">Kindle E-readers &amp; Books<div class="nav_tag">E-readers and eBooks</div></li><li class="nav_taglined nav_pop_li nav_cat" id="nav_cat_1">Amazon Apps<div class="nav_tag">Shopping, Kindle, Appstore</div></li><li class="nav_pop_li nav_cat nav_divider_before" id="nav_cat_2">Books</li><li class="nav_pop_li nav_cat" id="nav_cat_3">Movies, Music &amp; Video Games</li><li class="nav_pop_li nav_cat" id="nav_cat_4">Mobiles &amp; Tablets</li><li class="nav_taglined nav_pop_li nav_cat" id="nav_cat_5"> Computers &amp; Accessories <div class="nav_tag">Just Launched: Software</div></li><li class="nav_pop_li nav_cat" id="nav_cat_6">Cameras, Audio &amp; Video</li><li class="nav_pop_li nav_cat" id="nav_cat_7">Home, Kitchen &amp; Pets</li><li class="nav_pop_li nav_cat" id="nav_cat_8">Toys &amp; Baby Products</li><li class="nav_pop_li nav_cat" id="nav_cat_9">Sports, Fitness &amp; Outdoors</li><li class="nav_pop_li nav_cat" id="nav_cat_10">Beauty, Health &amp; Gourmet</li><li class="nav_pop_li nav_cat" id="nav_cat_11">Clothing &amp; Accessories</li><li class="nav_taglined nav_pop_li nav_cat" id="nav_cat_12">Watches &amp; Jewellery<div class="nav_tag">Just Launched: Precious Jewellery</div></li><li class="nav_pop_li nav_cat" id="nav_cat_13">Handbags &amp; Luggage</li><li class="nav_pop_li nav_cat" id="nav_cat_14">Shoes</li><li class="nav_taglined nav_pop_li nav_cat" id="nav_cat_15">Car &amp; Motorbike<div class="nav_tag">Just Launched</div></li><li class="nav_last nav_pop_li nav_no_cat nav_divider_before nav_a_carat" id="nav_cat_16"><span class="nav_a_carat">›</span><a class="nav_a" href="/gp/site-directory">Full Store Directory</a></li>
+</ul>
+<div class="nav-sprite" id="nav_cat_indicator"></div>
+</div>
+</div>
+<div class="nav-empty nav-flyout-content" data-many="" data-one="" id="nav-cart-flyout"><div class="nav-dynamic-full"><div class="nav-cart-content" id="nav-cart-standard"><a class="nav-cart-title" href="/gp/cart/view.html?ie=UTF8&amp;hasWorkingJavascript=1"></a><div class="nav-cart-subtitle"></div><div class="nav-cart-items"></div></div><div class="nav-cart-content" data-box="" data-box-filled="" data-boxes="" data-boxes-filled="" id="nav-cart-pantry"><a class="nav-cart-title" href="/gp/cart/view.html?ie=UTF8&amp;hasWorkingJavascript=1"></a><div class="nav-cart-subtitle"></div><div class="nav-cart-items"></div></div></div><div class="nav-ajax-message"></div><div class="nav-dynamic-empty"><p class="nav_p nav-bold nav-cart-empty"> Your Shopping Cart is empty.</p><p class="nav_p "> Give it purpose—fill it with books, movies, mobiles, cameras, toys and fashion jewellery.</p><p class="nav_p "> If you already have an account, <a class="nav_a" href="https://www.amazon.in/ap/signin?_encoding=UTF8&amp;openid.assoc_handle=inflex&amp;openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;openid.mode=checkid_setup&amp;openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&amp;openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&amp;openid.pape.max_auth_age=0&amp;openid.return_to=https%3A%2F%2Fwww.amazon.in%2Fgp%2Fyourstore%2Fhome%3Fie%3DUTF8%26ref_%3Dnav_signin_cart">sign in</a>.</p></div><div class="nav-ajax-error-msg"><p class="nav_p nav-bold"> There's a problem previewing your cart right now.</p><p class="nav_p "> Check your Internet connection and <a class="nav_a" href="/gp/cart/view.html?ie=UTF8&amp;hasWorkingJavascript=1">go to your cart</a>, or <a class="nav_a nav-try-again" href="javascript:void(0);">try again</a>.</p></div><div id="nav-cart-footer"><a class="nav-action-button" href="/gp/cart/view.html?ie=UTF8&amp;hasWorkingJavascript=1" id="nav-cart-menu-button"><span class="nav-action-inner">
+        View Cart
+        <span id="nav-cart-menu-button-count"><span id="nav-cart-zero">(<span class="nav-cart-count">0</span> items)</span><span id="nav-cart-one" style="display: none;">(<span class="nav-cart-count">0</span> item)</span><span id="nav-cart-many" style="display: none;">(<span class="nav-cart-count">0</span> items)</span></span></span></a></div></div>
+</div>
+<script type="text/javascript">
+      window.$Nav && $Nav.declare('config.prefetchUrls', ["http://z-ecx.images-amazon.com/images/G/01/browser-scripts/fruitCSS/en_IN-combined-1040211402._V1_.css","https://images-na.ssl-images-amazon.com/images/G/01/authportal/common/images/amznbtn-sprite03._V395592492_.png","https://images-na.ssl-images-amazon.com/images/G/01/browser-scripts/wcs-ya-homepage-beaconized/wcs-ya-homepage-beaconized-1284596852._V1_.css","https://images-na.ssl-images-amazon.com/images/G/01/browser-scripts/wcs-ya-homepage-beaconized/wcs-ya-homepage-beaconized-673430403._V1_.js","https://images-na.ssl-images-amazon.com/images/G/01/browser-scripts/wcs-ya-order-history-beaconized/wcs-ya-order-history-beaconized-207125090._V1_.css","https://images-na.ssl-images-amazon.com/images/G/01/x-locale/cs/css/images/amznbtn-sprite03._V387356454_.png","https://images-na.ssl-images-amazon.com/images/G/31/authportal/common/images/amazon_logo_no-org_mid._V377570192_.png","https://images-na.ssl-images-amazon.com/images/G/31/authportal/flex/reduced-nav/ap-flex-reduced-nav-2.0._V309255176_.js","https://images-na.ssl-images-amazon.com/images/G/31/authportal/flex/reduced-nav/ap-flex-reduced-nav-2.1._V343893441_.css","https://images-na.ssl-images-amazon.com/images/G/31/gno/images/general/navAmazonLogoFooter._V391206769_.gif","https://images-na.ssl-images-amazon.com/images/G/31/gno/sprites/global-sprite-v1._V333157339_.png","https://images-na.ssl-images-amazon.com/images/G/31/x-locale/common/buttons/sign-in-secure._V138348554_.gif","https://images-na.ssl-images-amazon.com/images/G/31/x-locale/common/login/fwcim._V342129342_.js","https://images-na.ssl-images-amazon.com/images/G/31/x-locale/common/transparent-pixel._V386942716_.gif","https://images-na.ssl-images-amazon.com/images/G/31/x-locale/communities/social/snwicons_v2._V402380004_.png","https://images-na.ssl-images-amazon.com/images/G/31/x-locale/cs/help/images/spotlight/kindle-family-02b._V160654563_.jpg","https://images-na.ssl-images-amazon.com/images/G/31/x-locale/cs/orders/images/acorn._V138349126_.gif","https://images-na.ssl-images-amazon.com/images/G/31/x-locale/cs/orders/images/amazon-gc-100._V349914954_.gif","https://images-na.ssl-images-amazon.com/images/G/31/x-locale/cs/orders/images/amazon-gcs-100._V349914299_.gif","https://images-na.ssl-images-amazon.com/images/G/31/x-locale/cs/orders/images/btn-close._V138349123_.gif","https://images-na.ssl-images-amazon.com/images/G/31/x-locale/cs/projects/text-trace/texttrace_typ._V353753460_.js","https://images-na.ssl-images-amazon.com/images/G/31/x-locale/cs/ya/images/new-link._V380689125_.gif","https://images-na.ssl-images-amazon.com/images/G/31/x-locale/cs/ya/images/shipment_large_lt._V380683640_.gif"]);
+window.$Nav && $Nav.declare('config.prefetch',function() {
+    var pUrls = window.$Nav.getNow('config.prefetchUrls');
+    if (window.amznJQ) amznJQ.addPL(pUrls);
+    else if (window.P) P.when('A').execute(function (A) { A.preload(pUrls); });
+});
+
+  /* nav-config-asset-injection IN::desktop::standard::49573:C&42994:T1&42980:C::isSecure=0::preload navc-v74OOWgn2p+VcbWDYHiPHHkNgE+qww9LbBvVtHiZfunhc+7WSQbkvw== rid-1020RHD6H2YZ6TFA2CHV seq-776 (Tue May 19 15:52:47 2015) **CACHED-BY-NCCC** */
+  
+  __auiPreloadIndex = window.__auiPreloadIndex || 0;
+  (window.AmazonUIPageJS ? AmazonUIPageJS : P).when('A').execute("auiPreloadJS_"+(++__auiPreloadIndex), function(A){
+    A.preload('http://z-ecx.images-amazon.com/images/G/01/AUIClients/NavAuiAssets-bc95ed9fdbfd9d48a2735db1f845425b78b7b952.min._V2_.js');
+    A.preload('https://images-na.ssl-images-amazon.com/images/G/01/AUIClients/NavAuiAssets-bc95ed9fdbfd9d48a2735db1f845425b78b7b952.secure.min._V2_.js');
+    A.preload('http://z-ecx.images-amazon.com/images/G/01/AUIClients/NavMetaAsset-bdbf725d2dcb9712aa9253bc09af97731b74148f._V2_.js');
+    A.preload('https://images-na.ssl-images-amazon.com/images/G/01/AUIClients/NavMetaAsset-bdbf725d2dcb9712aa9253bc09af97731b74148f._V2_.js');
+  });
+  (window.AmazonUIPageJS ? AmazonUIPageJS : P).when('A').execute("auiPreloadCSS_"+(++__auiPreloadIndex), function(A){
+    A.preload('http://z-ecx.images-amazon.com/images/G/01/AUIClients/NavAuiAssets-4c6327e530fbf6448291efaf91a613db0dd48b96.min._V2_.css');
+    A.preload('https://images-na.ssl-images-amazon.com/images/G/01/AUIClients/NavAuiAssets-4c6327e530fbf6448291efaf91a613db0dd48b96.secure.min._V2_.css');
+    A.preload('http://z-ecx.images-amazon.com/images/G/01/AUIClients/NavMetaAsset-fa7f4967b0f2d023988c5d05762ecf8e9c981e87._V2_.css');
+    A.preload('https://images-na.ssl-images-amazon.com/images/G/01/AUIClients/NavMetaAsset-fa7f4967b0f2d023988c5d05762ecf8e9c981e87._V2_.css');
+  });
+
+
+  if (window.amznJQ && (typeof window.P !== "object" || !P.AUI_BUILD_DATE)) {
+    AmazonUIPageJS.register("A",function(){
+      return {"preload":amznJQ.addPL};
+    });
+  }
+
+    window.$Nav && $Nav.declare('config.flyoutURL', null);
+    window.$Nav && $Nav.declare('btf.lite');
+    window.amznJQ && amznJQ.declareAvailable('navbarBTFLite');
+    window.$Nav && $Nav.declare('btf.full');
+    window.$Nav && $Nav.declare('btf.exists');
+    window.amznJQ && amznJQ.declareAvailable('navbarBTF');
+    (window.AmazonUIPageJS ? AmazonUIPageJS : P).register('navCF');
+  </script>
+<!--AMZNJQFINAL-->
+</body>
+</html>

@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html><body><p>"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\"&gt;
+    
+  
+
+
+</p>
+<title>
+    Amazon Sign In 
+</title>
+<link href="https://images-na.ssl-images-amazon.com/images/G/31/x-locale/common/errors-alerts/error-styles-ssl._CB138362389_.css" rel="stylesheet" type="text/css"/>
+<link href="https://images-na.ssl-images-amazon.com/images/G/31/authportal/common/css/ap_global._CB350157780_.css" rel="stylesheet" type="text/css"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<!--[if lte IE 5]>
+<div class="ie">
+<![endif]-->
+<!--[if IE 6]>
+<div class="ie ie6">
+<![endif]-->
+<!--[if IE 7]>
+<div class="ie ie7">
+<![endif]-->
+<!--[if IE 8]>
+<div class="ie ie8">
+<![endif]-->
+<div id="headerbanner">
+</div>
+<div id="wrapper">
+<div id="navbarTopSlots">
+</div>
+<div id="topSlots">
+<div id="top-0"></div>
+<div id="top-1">
+<div class="ap_header" id="ap_header">
+<img alt="Amazon Logo" border="0" height="36" src="https://images-na.ssl-images-amazon.com/images/G/31/x-locale/common/amazon-logo._CB138360615_.gif" width="126"/>
+</div>
+</div>
+<div id="top-2"></div>
+<div id="top-3"></div>
+<div id="top-4"></div>
+<div id="top-5"></div>
+<div id="top-6"></div>
+<div id="top-7"></div>
+<div id="top-8"></div>
+<div id="top-9"></div>
+<div id="top-10"></div>
+</div>
+<div id="leftSlots">
+<div id="left-0"></div>
+<div id="left-1"></div>
+<div id="left-2"></div>
+<div id="left-3"></div>
+<div id="left-4"></div>
+<div id="left-5"></div>
+<div id="left-6"></div>
+<div id="left-7"></div>
+<div id="left-8"></div>
+<div id="left-9"></div>
+<div id="left-10"></div>
+</div>
+<div id="centerSlots">
+<div id="center-0"></div>
+<div id="title-slot">
+<!--[if lte IE 5]>
+<div class="ie">
+<![endif]-->
+<!--[if IE 6]>
+<div class="ie ie6">
+<![endif]-->
+<!--[if IE 7]>
+<div class="ie ie7">
+<![endif]-->
+<!--[if IE 8]>
+<div class="ie ie8">
+<![endif]-->
+<div id="ap_title_pagelet">
+</div>
+<!--[if lte IE 8]>
+</div>
+<![endif]-->
+</div>
+<div id="message-box-slot">
+<div class="message warning" id="message_warning" style="display:none">
+<span></span>
+<h6>Please Enable Cookies to Continue</h6>
+<p>
+				To continue shopping at Amazon, please enable cookies in your Web browser.
+			</p>
+<p>
+<a href="/gp/help/customer/display.html/ref=ap_cookie_error_help??nodeId=200168080" onclick="return amz_js_PopWin(this.href,'AmazonHelp','width=700,height=800,resizable=1,scrollbars=1,toolbar=1,status=1');return false;" target="AmazonHelp">
+					Learn more
+				</a>												
+		    	about cookies and how to enable them.
+		    </p>
+</div>
+<script type="text/javascript">
+
+			function setCookie(c_name,value,expiredays)
+			{
+				var exdate=new Date();
+				exdate.setDate(exdate.getDate()+expiredays);
+				document.cookie=c_name+ "=" +escape(value)+
+				((expiredays==null) ? "" : ";expires="+exdate.toGMTString());
+			}
+			
+			function getCookie(c_name)
+			{
+				if (document.cookie.length>0)
+				{
+					c_start=document.cookie.indexOf(c_name + "=");
+					if (c_start!=-1)
+					{
+						c_start=c_start + c_name.length+1;
+						c_end=document.cookie.indexOf(";",c_start);
+						if (c_end==-1) c_end=document.cookie.length;
+						return unescape(document.cookie.substring(c_start,c_end));
+					}
+				}
+				return "";
+			}
+			function deleteCookie ( cookie_name )
+			{
+			  var cookie_date = new Date ( );  // current date & time
+			  cookie_date.setTime ( cookie_date.getTime() - 1 );
+			  document.cookie = cookie_name += "=; expires=" + cookie_date.toGMTString();
+			}
+						
+			function checkCookieEnabled(nodeId)
+			{
+				setCookie('amznTest','1',null);
+				if(getCookie('amznTest')){
+					deleteCookie('amznTest');
+				}else{
+					document.getElementById(nodeId).style.display = 'block';
+				}
+			}
+			checkCookieEnabled('message_warning');
+		</script>
+</div>
+<div id="center-1"></div>
+<div id="signin-slot">
+<script>
+  function cf() {
+    if (typeof window.uet === 'function') {
+      uet('cf');
+    }
+    if (window.embedNotification &&
+      typeof window.embedNotification.onCF === 'function') {
+      embedNotification.onCF();
+    }
+  }
+</script>
+<!--[if lte IE 5]>
+    <div class="ie">
+      <![endif]-->
+<!--[if IE 6]>
+    <div class="ie ie6">
+      <![endif]-->
+<!--[if IE 7]>
+    <div class="ie ie7">
+      <![endif]-->
+<!--[if IE 8]>
+    <div class="ie ie8">
+      <![endif]-->
+<form action="https://www.amazon.in/ap/signin" id="ap_signin_form" method="POST" name="signIn" novalidate="novalidate" onsubmit="var test1 = apCheckRequiredFields('ap_signin_form', ['ap_email','ap_password']);
+        return (apValidateEmail('ap_email') &amp;&amp; test1);">
+<input name="appActionToken" type="hidden" value="scIhj2FOCtxr39z7eUIj2FWeNOWxtIwj3D"/><input name="appAction" type="hidden" value="SIGNIN"/>
+<input name="openid.pape.max_auth_age" type="hidden" value="ape:MA=="/>
+<input name="openid.ns" type="hidden" value="ape:aHR0cDovL3NwZWNzLm9wZW5pZC5uZXQvYXV0aC8yLjA="/>
+<input name="openid.ns.pape" type="hidden" value="ape:aHR0cDovL3NwZWNzLm9wZW5pZC5uZXQvZXh0ZW5zaW9ucy9wYXBlLzEuMA=="/>
+<input name="prevRID" type="hidden" value="ape:MDhYMTBDUDZBUDNNM01ZUVdXUjA="/>
+<input name="pageId" type="hidden" value="ape:aW5hbWF6b24="/>
+<input name="openid.identity" type="hidden" value="ape:aHR0cDovL3NwZWNzLm9wZW5pZC5uZXQvYXV0aC8yLjAvaWRlbnRpZmllcl9zZWxlY3Q="/>
+<input name="openid.claimed_id" type="hidden" value="ape:aHR0cDovL3NwZWNzLm9wZW5pZC5uZXQvYXV0aC8yLjAvaWRlbnRpZmllcl9zZWxlY3Q="/>
+<input name="openid.mode" type="hidden" value="ape:Y2hlY2tpZF9zZXR1cA=="/>
+<input name="openid.assoc_handle" type="hidden" value="ape:aW5hbWF6b24="/>
+<input name="openid.return_to" type="hidden" value="ape:aHR0cHM6Ly93d3cuYW1hem9uLmluL3JlZmVyLWFuZC1lYXJuP19lbmNvZGluZz1VVEY4JipWZXJzaW9uKj0xJiplbnRyaWVzKj0w"/>
+<div class="ap_table ap_pagelet" id="ap_signin1a_pagelet">
+<div class="ap_row ap_pagelet_title" id="ap_signin1a_pagelet_title">
+<h1>Sign In</h1>
+</div>
+<div class="ap_row ap_section_title" id="ap_signin1a_email_section_title">
+<h2>
+        
+          
+          
+            What is your e-mail address?
+          
+        
+      </h2>
+</div>
+<div class="ap_row" id="ap_signin1a_email_row">
+<span class="ap_col1 ap_bold ap_right ap_no_collapse">
+<label for="ap_email">
+              
+                
+                
+                  My e-mail address is:
+                
+              
+            </label>
+</span>
+<span class="ap_col2 ap_left">
+<input autocapitalize="off" autocorrect="off" id="ap_email" maxlength="128" name="email" size="30" tabindex="1" type="email" value=""/>
+</span>
+</div>
+<div class="center clear-both" id="ap_signin_custom_message">
+</div>
+<div class="ap_row ap_section_title" id="ap_signin1a_password_section_title">
+<h2> Do you have an Amazon password? </h2>
+</div>
+<div class="ap_row" id="ap_signin1a_new_cust_radio_row">
+<span class="ap_col1 ap_right ap_no_collapse" id="">
+<input id="ap_signin_create_radio" name="create" onclick="setElementAvailability('ap_password', false);jQuery('#ap_captcha_table').hide();" tabindex="6" type="radio" value="1"/>
+</span>
+<span class="ap_col2 bold ap_radio_label" id="">
+<label for="ap_signin_create_radio">I am a new customer.</label>
+<div class="small">(you'll create a password later)</div>
+</span>
+</div>
+<div class="ap_row" id="ap_signin1a_exist_cust_radio_row">
+<span class="ap_col1 ap_right">
+<input checked="checked" id="ap_signin_existing_radio" name="create" onclick="setElementAvailability('ap_password', true);jQuery('#ap_captcha_table').show();" tabindex="7" type="radio" value="0"/>
+</span>
+<span class="ap_col2 bold ap_radio_label"><label for="ap_signin_existing_radio">I am a returning customer, <br/>and my password is:</label></span>
+</div>
+<div class="ap_row" id="ap_signin1a_password_row">
+<span class="ap_col1"> </span>
+<span class="ap_col2">
+<input class="password" id="ap_password" maxlength="1024" name="password" onkeypress="displayCapsWarning(event,'ap_caps_warning', this);" size="20" tabindex="2" type="password"/>
+</span>
+<span id="ap_caps_warn_span">
+<div class="ap_caps_warn ap_col3_caps_warn" id="ap_caps_warning" style="visibility:hidden;">
+<!--[if lt IE 7]>
+  <style type="text/css">
+  .ap_caps_warn {
+    display: none;
+  }
+  </style>
+  <![endif]-->
+<b>Caps Lock is on.</b> <font color="black">This may cause you <br/>to enter your password incorrectly.</font>
+</div>
+</span>
+</div>
+<!--[if IE]><![if !IE]><![endif]-->
+<div id="ap_small_forgot_password_link">
+<!--[if IE]><![endif]><![endif]-->
+<!--[if lte IE 6]>
+          <div id="ap_small_forgot_password_link_ie_old" class="ie_old">
+        <![endif]-->
+<!--[if gte IE 7]>
+           <div id="ap_small_forgot_password_link_ie_new" class="ie_new">
+        <![endif]-->
+<span class="small" id="ap_small_forgot_password_span">
+<a href="https://www.amazon.in/ap/forgotpassword?openid.pape.max_auth_age=0&amp;openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&amp;openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&amp;prevRID=08X10CP6AP3M3MYQWWR0&amp;pageId=inamazon&amp;openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;openid.mode=checkid_setup&amp;openid.assoc_handle=inamazon&amp;openid.return_to=https%3A%2F%2Fwww.amazon.in%2Frefer-and-earn%3F_encoding%3DUTF8%26*Version*%3D1%26*entries*%3D0"></a>
+</span>
+</div>
+<div class="ap_row" id="ap_signin1a_signin_button_row">
+<span class="ap_col1"> </span>
+<span class="ap_col2">
+<input alt="Continue" border="0" height="22" id="signInSubmit" onload="cf()" src="https://images-na.ssl-images-amazon.com/images/G/31/x-locale/common/buttons/sign-in-secure._CB138348554_.gif" tabindex="5" type="image" value="Continue" width="201"/>
+</span>
+<div class="ap_csm_marker" style="display:none;">
+<script type="text/javascript">if (typeof uet == 'function') { uet('af'); }</script>
+</div>
+</div>
+<div class="ap_row" id="ap_signin1a_forgot_password_row">
+<span class="ap_col1"> </span>
+<span class="ap_col2">
+<a href="https://www.amazon.in/ap/forgotpassword?openid.pape.max_auth_age=0&amp;openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&amp;openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&amp;prevRID=08X10CP6AP3M3MYQWWR0&amp;pageId=inamazon&amp;openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;openid.mode=checkid_setup&amp;openid.assoc_handle=inamazon&amp;openid.return_to=https%3A%2F%2Fwww.amazon.in%2Frefer-and-earn%3F_encoding%3DUTF8%26*Version*%3D1%26*entries*%3D0">
+              Forgot your password?
+            </a>
+</span>
+</div>
+<div class="ap_row" id="ap_signin1a_cnep_row">
+<span class="ap_col1"> </span>
+<span class="ap_col2" id="ap_signin1a_cnep_row_col2">
+<a href="https://www.amazon.in/ap/signin?openid.pape.max_auth_age=0&amp;openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&amp;openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&amp;prevRID=08X10CP6AP3M3MYQWWR0&amp;pageId=inamazon&amp;openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;openid.mode=checkid_setup&amp;openid.assoc_handle=inamazon&amp;openid.return_to=https%3A%2F%2Fwww.amazon.in%2Frefer-and-earn%3F_encoding%3DUTF8%26*Version*%3D1%26*entries*%3D0&amp;changeEmail=1">Has your e-mail address changed since your last order?</a>
+</span>
+</div>
+</div>
+</form>
+<!--[if lte IE 8]>
+    </div>
+<![endif]-->
+</div>
+<div id="center-2"></div>
+<div id="center-3"></div>
+<div id="center-4"></div>
+<div id="center-5"></div>
+<div id="center-6"></div>
+<div id="center-7"></div>
+<div id="center-8"></div>
+<div id="center-9"></div>
+<div id="center-10"></div>
+</div>
+<div id="rightSlots">
+<div id="right-0"></div>
+<div id="right-1"></div>
+<div id="right-2"></div>
+<div id="right-3"></div>
+<div id="right-4"></div>
+<div id="right-5"></div>
+<div id="right-6"></div>
+<div id="right-7"></div>
+<div id="right-8"></div>
+<div id="right-9"></div>
+<div id="right-10"></div>
+</div>
+<div id="bottomSlots">
+<div id="bottom-1">
+<div class="ap_privacy_footer" id="ap_privacy">
+<p align="center" class="tiny">
+<a href="/gp/help/customer/display.html/ref=ap_footer_condition_of_use?ie=UTF8&amp;nodeId=200545940" id="footer_conditions_of_use_URL_link" onclick="return amz_js_PopWin(this.href+'&amp;pop-up=1','AmazonHelp','width=340,height=340,resizable=1,scrollbars=1,toolbar=1,status=1');" target="AmazonHelp">Conditions of Use</a>
+<a href="/gp/help/customer/display.html/ref=ap_footer_privacy_notice?ie=UTF8&amp;nodeId=200534380" id="footer_privacy_notice_URL_link" onclick="return amz_js_PopWin(this.href+'&amp;pop-up=1','AmazonHelp','width=340,height=340,resizable=1,scrollbars=1,toolbar=1,status=1');" target="AmazonHelp">Privacy Notice</a>
+<br/>
+<span id="ap_footer_copyright">© 1996-2015, Amazon.com, Inc. or its affiliates</span>
+</p>
+</div>
+</div>
+<div id="bottom-2"></div>
+<div id="bottom-3"></div>
+<div id="bottom-4"></div>
+<div id="bottom-5"></div>
+<div id="bottom-6"></div>
+<div id="bottom-7"></div>
+<div id="bottom-8"></div>
+<div id="bottom-9"></div>
+<div id="bottom-10"></div>
+</div>
+<div id="footerSlots">
+<div id="footer-1"></div><!-- footer-1 -->
+<div id="footer-2"></div><!-- footer-2 -->
+<div id="footer-3"></div><!-- footer-3 -->
+<div id="footer-4"></div><!-- footer-4 -->
+<div id="footer-5"></div><!-- footer-5 -->
+<div id="footer-6"></div><!-- footer-6 -->
+<div id="footer-7"></div><!-- footer-7 -->
+<div id="footer-8"></div><!-- footer-8 -->
+<div id="footer-9"></div><!-- footer-9 -->
+<div id="footer-10"></div><!-- footer-10 -->
+</div><!-- footerSlots -->
+<div id="navbarBottomSlots">
+</div>
+<script type="text/javascript">
+(function() {
+try {
+  if ( ue && ue.tag && window.performance.getEntriesByType ) {
+    var t = window.performance.getEntriesByType('resource');
+    if ( t ) {
+      var d = 0;
+      for ( var i = 0; i < t.length; i++ )
+        if ( t[i].duration > d ) d = t[i].duration;
+      ue.tag('ap-rt-' + Math.ceil(d / 100) * 100);
+    }
+  }
+}
+catch (e) {}
+})();
+</script>
+<div id="javascriptSlots">
+<div id="javascript-slot-0">
+<script src="https://images-na.ssl-images-amazon.com/images/G/31/javascripts/lib/jquery/jquery-1.2.6.min._CB166146506_.js" type="text/javascript"></script>
+</div>
+<div id="javascript-slot-1"></div>
+<div id="javascript-slot-2"></div>
+<div id="javascript-slot-3"></div>
+<div id="javascript-slot-4"></div>
+<div id="javascript-identity">
+<script src="https://images-na.ssl-images-amazon.com/images/G/31/authportal/common/js/ap_global-1.1._CB309255203_.js" type="text/javascript"></script>
+</div>
+<div id="javascript-slot-5"></div>
+<div id="js-trms">
+<script id="fwcim-script" src="https://images-na.ssl-images-amazon.com/images/G/31/x-locale/common/login/fwcim._CB342129342_.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+fwcim.useMercury('https://images-na.ssl-images-amazon.com/images/G/31/x-locale/common/login/mercury9._CB372126299_.swf')
+
+
+
+
+fwcim.profile();
+
+</script>
+</div>
+<div id="cache-1"></div>
+<div id="cache-2"></div>
+</div><!-- javascriptSlots -->
+</div> <!-- end  div  wrapper -->
+<!--[if lte IE 8]>
+</div>
+<![endif]-->
+</body></html>
